@@ -1,4 +1,4 @@
-  <!doctype html>
+<!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -71,7 +71,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Logout</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
