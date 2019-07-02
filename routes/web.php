@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('home', 'ShopController@index');
 Route::get('home/{product}', 'ShopController@show');
+
+Route::get('shop/order', 'ShopController@order')->name('shop.order');
