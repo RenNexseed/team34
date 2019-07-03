@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('home', 'ShopController@index');
-Route::get('home/{product}', 'ShopController@show');
+Route::group(['middleware' => 'auth'], function() {
+    //Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('selectcourse', 'SelectcourseController@index');
+    Route::get('/', 'ShopController@index');
+    Route::get('home', 'ShopController@index');
+    Route::get('home/{product}', 'ShopController@show');
+    
+});
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
