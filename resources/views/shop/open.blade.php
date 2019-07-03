@@ -6,7 +6,16 @@
 </head>
 <body>
   <h1>このページは詳細ページ(商品紹介ページだよん)</h1>
+  <form action="/store-orders" method="POST">
+    {{ $product->name}}
   <h1>{{ $product->description }}</h1>
+  
+  
+  <h2><img src="/storage/{{ $product->picture_path }}"></h2>
+
+  <button type="submit">カートに入れる</button>
+
+</form>
 
 
 </body>
