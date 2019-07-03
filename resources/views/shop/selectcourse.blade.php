@@ -22,14 +22,13 @@
   <aside id="fh5co-hero" class="js-fullheight">
     <div class="flexslider js-fullheight">
       <ul class="slides">
-        <li style="background-image: url(../../../selectCourse/images/bg1.jpg);">
+        <li style="background-image: url(img/bg1.jpg);">
           <div class="overlay-gradient"></div>
           <div class="container">
             <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
               <div class="slider-text-inner">
                 <img src="images/logo2.png">
-                <p><a href="#" class="btn btn-primary btn-lg">演習コース</a></p>
-                <p><a href="#" class="btn btn-primary btn-lg">道場コース</a></p>
+                <p><a href="#" class="btn btn-primary btn-lg">はじめる</a></p>
               </div>
             </div>
           </div>

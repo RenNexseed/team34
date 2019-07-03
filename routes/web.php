@@ -14,8 +14,8 @@
 
 Route::group(['middleware' => 'auth'], function() {
     //Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('selectcourse', 'SelectcourseController@index');
-    Route::get('/', 'ShopController@index');
+    Route::get('/', 'SelectcourseController@index');
+    Route::get('open', 'ShopController@index');
     Route::get('home', 'ShopController@index');
     Route::get('home/{product}', 'ShopController@show');
     
