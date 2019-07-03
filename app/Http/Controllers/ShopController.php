@@ -17,4 +17,53 @@ class ShopController extends Controller
 
       return view('shop.open')->with('product', Product::find($productId));
     }
+
+    public function create()
+    {
+      return view('shop.createproducts');  
+
+      
+    }
+
+    
+ 
+
+    public function store()
+    {
+
+
+       $data = request()->all();
+
+       $product = new Product();
+
+
+       //$imgpath = $this->saveProfileImage($request->file('picture_path'));
+
+
+       $product->name = $data['name'];
+       $product->category = $data['category'];
+       $product->price = $data['price'];
+       $product->description = $data['description'];
+
+
+       $imgPath = $data['picture_path']->store('images', 'public');
+
+       $product->picture_path = $imgPath;
+
+
+       $product->save();
+
+       return redirect('/home');
+    }
+
+    public function destroy($productId)
+    {
+      $product = Product::find($productId);
+
+      $product->delete();
+
+      return redirect('/home');
+    }
+
+
 }

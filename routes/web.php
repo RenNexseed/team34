@@ -18,8 +18,12 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('open', 'ShopController@index');
     Route::get('home', 'ShopController@index');
     Route::get('home/{product}', 'ShopController@show');
+    Route::get('home', 'ShopController@index');
+    Route::get('home/{product}', 'ShopController@show');
+    Route::get('new-products', 'ShopController@create');
+    Route::post('store-products', 'ShopController@store');
+    Route::get('products/{product}/delete', 'ShopController@destroy');
+    Route::post('store-oreders', 'OrderController@store');
     
 });
 Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
