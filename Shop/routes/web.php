@@ -14,7 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('home', 'ShopController@index');
-Route::get('home/{product}', 'ShopController@show');
-Route::get('check', 'CheckController@index');
