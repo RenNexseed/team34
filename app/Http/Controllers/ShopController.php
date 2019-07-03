@@ -18,15 +18,17 @@ class ShopController extends Controller
       return view('shop.open')->with('product', Product::find($productId));
     }
 
-    public function create()
+    public function order()
     {
+        // views/shop/order.blade.phpを表示する
+        return view('shop.order')->with('products', Product::all());
+    }
+
+    public function create(){
       return view('shop.createproducts');  
 
       
     }
-
-    
- 
 
     public function store()
     {
@@ -64,6 +66,4 @@ class ShopController extends Controller
 
       return redirect('/home');
     }
-
-
 }
