@@ -21,3 +21,4 @@ Route::get('new-products', 'ShopController@create');
 Route::post('store-products', 'ShopController@store');
 Route::get('products/{product}/delete', 'ShopController@destroy');
 Route::post('store-oreders', 'OrderController@store');
+Route::get('check', 'CheckController@index');
