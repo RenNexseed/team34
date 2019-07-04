@@ -1,22 +1,9 @@
 @extends('layouts.app')
 @section('title')
 @endsection
-<!-- @section('content') -->
-<!--   
-  <div id="fh5co-page">
-  <header id="fh5co-header" role="banner">
-    <div class="container">
-      <div class="header-inner">
-        <img src="storage/images/title.png">
-        <nav role="navigation">
-
-        </nav>
-      </div>
-    </div>
-  </header> -->
+@section('content')
   
-  <div class="container-fluid" style="background-image: url(storage/images/bg1.jpg); background-size: cover;">
-    
+  <div class="container-fluid bg-img">
     <aside id="fh5co-hero" class="js-fullheight">
       <div class="flexslider js-fullheight">
         <ul class="slides">
@@ -51,4 +38,4 @@
   <!-- MAIN JS -->
   <script src="js/main.js"></script>
 
-<!-- @endsection -->
+@endsection
