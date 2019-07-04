@@ -13,6 +13,7 @@
 
 
 Route::group(['middleware' => 'auth'], function() {
+  // ログインしていないと表示できないページ↓
     //Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/', 'SelectcourseController@index');
     Route::get('open', 'ShopController@index');

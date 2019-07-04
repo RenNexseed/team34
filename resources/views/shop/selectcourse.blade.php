@@ -1,41 +1,40 @@
 @extends('layouts.app')
 @section('title')
-一覧
 @endsection
-@section('content')
-  
+<!-- @section('content') -->
+<!--   
   <div id="fh5co-page">
   <header id="fh5co-header" role="banner">
     <div class="container">
       <div class="header-inner">
-        <img src="images/title.png">
+        <img src="storage/images/title.png">
         <nav role="navigation">
 
         </nav>
       </div>
     </div>
-  </header>
+  </header> -->
   
-  <div class="container">
+  <div class="container-fluid" style="background-image: url(storage/images/bg1.jpg); background-size: cover;">
     
-  </div>
-  <aside id="fh5co-hero" class="js-fullheight">
-    <div class="flexslider js-fullheight">
-      <ul class="slides">
-        <li style="background-image: url(img/bg1.jpg);">
-          <div class="overlay-gradient"></div>
-          <div class="container">
-            <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-              <div class="slider-text-inner">
-                <img src="images/logo2.png">
-                <p><a href="#" class="btn btn-primary btn-lg">はじめる</a></p>
+    <aside id="fh5co-hero" class="js-fullheight">
+      <div class="flexslider js-fullheight">
+        <ul class="slides">
+          <!-- <li style="background-image: url(storage/images/bg1.jpg);"> -->
+            <div class="overlay-gradient"></div>
+            <div class="container">
+              <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                <div class="slider-text-inner">
+                  <img alt="logo" src="storage/images/logo2.png">
+                  <p><a href="#" class="btn btn-primary btn-lg">はじめる</a></p>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        </ul>
-      </div>
-  </aside>
+          </li>
+          </ul>
+        </div>
+    </aside>
+  </div>
     <!-- jQuery -->
   <script src="js/jquery.min.js"></script>
   <!-- jQuery Easing -->
@@ -52,4 +51,4 @@
   <!-- MAIN JS -->
   <script src="js/main.js"></script>
 
-@endsection
+<!-- @endsection -->
