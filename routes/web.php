@@ -26,6 +26,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-products', 'ShopController@store');
     Route::get('products/{product}/delete', 'ShopController@destroy');
     Route::get('check', 'CheckController@index'); 
+    Route::get('top2', 'SelectcourseController@index'); 
 });
 
 Auth::routes();
