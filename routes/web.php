@@ -30,6 +30,13 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('contact', 'ContactController@index')->name('contact');
     Route::post('contact/confirm', 'ContactController@confirm')->name('confirm');
     Route::post('contact/sent', 'ContactController@sent')->name('sent');
+    Route::get('order', 'OrderController@index');
+    Route::get('orders/{order}/delete', 'OrderController@destroy');
+    Route::post('product/find', 'ShopController@find'); 
+
 });
 
+
+
 Auth::routes();
+
