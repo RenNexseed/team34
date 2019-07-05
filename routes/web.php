@@ -25,7 +25,11 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-orders', 'OrderController@store');
     Route::post('store-products', 'ShopController@store');
     Route::get('products/{product}/delete', 'ShopController@destroy');
-    Route::get('check', 'CheckController@index'); 
+    Route::get('check', 'CheckController@index');
+    Route::post('check', 'CheckController@confirm')->name('check.confirm');
+    Route::get('contact', 'ContactController@index')->name('contact');
+    Route::post('contact/confirm', 'ContactController@confirm')->name('confirm');
+    Route::post('contact/sent', 'ContactController@sent')->name('sent');
 });
 
 Auth::routes();

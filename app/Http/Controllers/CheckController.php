@@ -11,4 +11,8 @@ class CheckController extends Controller
     {
         return view('shop.check');
     }
+    public function confirm()
+    {
+        return view('shop.confirm');
+    }
 }

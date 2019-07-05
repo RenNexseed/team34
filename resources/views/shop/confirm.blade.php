@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="form-group col-sm-4 col-form-label">
-      <label for="inputState">都道府県</label>
+      <label for="inputState">都道府県hogehoge</label>
         <div class="col-sm-8">
           <input type="text" name="pref31" size="20">
         </div>
