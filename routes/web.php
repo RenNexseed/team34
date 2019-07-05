@@ -20,4 +20,7 @@ Route::get('home/{product}', 'ShopController@show');
 Route::get('new-products', 'ShopController@create');
 Route::post('store-products', 'ShopController@store');
 Route::get('products/{product}/delete', 'ShopController@destroy');
-Route::post('store-oreders', 'OrderController@store');
+Route::post('store-orders', 'OrderController@store');
+Route::get('order', 'OrderController@index');
+Route::get('orders/{order}/delete', 'OrderController@destroy');
+Route::post('product/find', 'ShopController@find');

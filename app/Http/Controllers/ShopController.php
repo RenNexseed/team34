@@ -65,5 +65,10 @@ class ShopController extends Controller
       return redirect('/home');
     }
 
-
+    public function find(Request $request)
+    {
+      $product = Product::where('name', $request->find)->get();
+      $param = ['name' => $request->name];
+      return view('shop.find', $param);
+    }
 }
