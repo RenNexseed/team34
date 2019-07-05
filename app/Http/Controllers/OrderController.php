@@ -3,18 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Order;
+use App\Product;
+
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
+
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $orders = Order::with('product')->get();
+        return view('shop.order', ['orders' => $orders]);
+
     }
 
     /**
@@ -35,9 +40,16 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        $order = new Order
+        $order = new Order();
 
-        $order->
+        $order->product_id =  $request->product_id;
+
+        $order->amount = $request->amount;
+
+
+        $order->save();
+
+        return redirect('/order');
     }
 
     /**
@@ -80,8 +92,12 @@ class OrderController extends Controller
      * @param  \App\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy($orderId)
     {
-        //
+        $order = Order::find($orderId);
+
+        $order->delete();
+
+        return redirect('/order');
     }
 }

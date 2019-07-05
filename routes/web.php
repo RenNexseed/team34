@@ -26,6 +26,12 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-products', 'ShopController@store');
     Route::get('products/{product}/delete', 'ShopController@destroy');
     Route::get('check', 'CheckController@index'); 
+    Route::get('order', 'OrderController@index');
+    Route::get('orders/{order}/delete', 'OrderController@destroy');
+    Route::post('product/find', 'ShopController@find'); 
 });
 
+
+
 Auth::routes();
+
