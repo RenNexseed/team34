@@ -10,6 +10,7 @@ class ContactController extends Controller
         return view('contact.form');
     }
     public function confirm(ContactRequest $request){
+
       
         $contact = $request->all();
 

@@ -11,8 +11,16 @@ class CheckController extends Controller
     {
         return view('shop.check');
     }
-    public function confirm()
+    public function confirm(Request $request)
     {
-        return view('shop.confirm');
+        $data = $request->all();
+
+        return view('shop.confirm', ['hoge' => $data]);
+    }
+    public function thanks(Request $request)
+    {
+        $data = $request->all();
+
+        return view('shop.thanks', ['hoge' => $data]);
     }
 }

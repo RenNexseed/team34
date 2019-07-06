@@ -11,13 +11,13 @@
     <div class="form-group row">
       <label for="text4c" class="col-sm-5 col-form-label">お名前</label>
         <div class="col-sm-7">
-          <input type="text" class="form-control" id="text4c">
+          <input type="text" class="form-control" id="text4c" name="name">
         </div>
     </div>
   <div class="form-group row">
     <label for="inputEmail3" class="col-sm-5 col-form-label">メールアドレス</label>
     <div class="col-sm-7">
-      <input type="email" class="form-control" id="inputEmail3">
+      <input type="email" class="form-control" id="inputEmail3" name="mail">
     </div>
   </div>
     <div class="form-group col-sm-4 mt-5 form-inline">
@@ -47,7 +47,7 @@
   <div class="form-group col-sm-4 col-form-label">
     <label for="inputAddress2">ビル、マンション名</label>
       <div class="col-sm-8">
-        <input type="text" class="form-control" id="inputAddress2">
+        <input type="text" class="form-control" id="inputAddress2" name="build">
       </div>
   </div>
   <div class="form-group">
