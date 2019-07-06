@@ -6,12 +6,11 @@
 <body>
 
 
+  
 
+  <p>{{ $products->name }}</p>
 
-  <p>あああああ</p>
-
-  {{ $param->name }}
-
+  
 
 </body>
 </html>

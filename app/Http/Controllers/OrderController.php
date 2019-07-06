@@ -19,6 +19,7 @@ class OrderController extends Controller
     {
         $orders = Order::with('product')->get();
         return view('shop.order', ['orders' => $orders]);
+        
 
     }
 

@@ -8,7 +8,7 @@
 
     <form action="/product/find" method="post">
       @csrf
-      <input type="text" name="find">
+      <input type="text" name="name" value="">
       <input type="submit" value="検索">
     </form>
 
