@@ -33,7 +33,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('contact/sent', 'ContactController@sent')->name('sent');
     Route::get('order', 'OrderController@index');
     Route::get('orders/{order}/delete', 'OrderController@destroy');
-    Route::post('product/find', 'ShopController@find'); 
+    Route::post('product/find', 'ShopController@find');
 
 });
 
