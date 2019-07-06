@@ -6,16 +6,30 @@
 </head>
 <body>
   <h1>このページは詳細ページ(商品紹介ページだよん)</h1>
-  <form action="/store-orders" method="POST">
+  <!-- <form action="/store-orders" method="POST"> -->
     {{ $product->name}}
   <h1>{{ $product->description }}</h1>
   
   
   <h2><img src="/storage/{{ $product->picture_path }}"></h2>
 
+  <form action="/store-orders" method="POST">
+  @csrf
+  <input type="hidden" value="{{ $product->id }}" name="product_id">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">数量</label>
+    <select class="form-control" id="" name="amount">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+
   <button type="submit">カートに入れる</button>
 
-</form>
+  </form>
 
 
 </body>

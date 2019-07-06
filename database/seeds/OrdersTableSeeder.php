@@ -12,27 +12,26 @@ class OrdersTableSeeder extends Seeder
      */
     public function run()
     {
-      // factory(App\Order::class, 5)->create();
-
-        DB::table('orders')->insert([
+      factory(App\Order::class, 5)->create();
+      DB::table('orders')->insert([
         [
-          'amount' => 1,
-          'id' => 3,
+          'amount' =>2,
+          'id' =>2,
           'created_at' => Carbon::now(),
           'updated_at' => Carbon::now(),
         ],
         [
-          'amount' => 2,
-          'id' => 4,
+          'amount' =>2,
+          'id' =>2,
           'created_at' => Carbon::now(),
           'updated_at' => Carbon::now(),
         ],
         [
-          'amount' => 1,
-          'id' => 5,
+          'book_name' =>2,
+          'id' => 2,
           'created_at' => Carbon::now(),
           'updated_at' => Carbon::now(),
         ],
       ]);
-  }
+
 }

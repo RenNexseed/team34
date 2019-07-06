@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 class ShopController extends Controller
 {
     public function index(){
-
       return view('shop.home')->with('products', Product::all());
 
     }
@@ -65,5 +64,11 @@ class ShopController extends Controller
       $product->delete();
 
       return redirect('/home');
+    }
+    public function find(Request $request)
+    {
+      $product = Product::where('name', $request->find)->get();
+      $param = ['name' => $request->name];
+      return view('shop.find', $param);
     }
 }
