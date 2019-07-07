@@ -8,7 +8,7 @@ use App\Http\Requests\Create;
 
 class CheckController extends Controller
 {
-    public function index(CreateForm $request)
+    public function index()
     {
         return view('shop.check');
     }
