@@ -22,11 +22,8 @@
       @foreach($orders as $order)
       <tr>
         <td> {{ $order->product->name }} </td>
-        <td> <img src="storage/{{ $order->product->picture_path }}"> </td>
+        <td> <img src="storage/{{ $order->product->picture_path }}" style="width: 300px; height: auto;"> </td>
         <td> {{ $order->product->price }}</td>
-       <!--  <td> <input type="hidden" name="amount" value="{{ $order->amount }}"></td>
-        <td> <input type="hidden" name="product_id" value="{{ $order->product_id }}"></td> -->
-        
         <td><a href="{{ route('order.decr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-minus">-</a> {{ $order->amount }} <a href="{{ route('order.incr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-plus">+</a></td>
         
         
@@ -37,6 +34,4 @@
       <input type= submit value="購入確定ページへ飛ぶ">
 </form>
 
-
-      
 @endsection

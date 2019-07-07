@@ -18,6 +18,7 @@ class OrderController extends Controller
     public function index(Request $request)
     {
         $orders = Order::with('product')->get();
+        
         return view('shop.order', ['orders' => $orders]);
 
 
@@ -42,7 +43,6 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $order = new Order();
-
         $order->product_id =  $request->product_id;
 
         $order->amount = $request->amount;

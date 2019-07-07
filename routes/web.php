@@ -25,10 +25,16 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-orders', 'OrderController@store');
     Route::post('store-products', 'ShopController@store');
     Route::get('products/{product}/delete', 'ShopController@destroy');
-    Route::get('check', 'CheckController@index'); 
+    Route::get('check', 'CheckController@index');
+    Route::post('confirm', 'CheckController@confirm')->name('check.confirm');
+    Route::post('thanks', 'CheckController@thanks')->name('check.thanks');
+    Route::get('contact', 'ContactController@index')->name('contact');
+    Route::post('contact/confirm', 'ContactController@confirm')->name('confirm');
+    Route::post('contact/sent', 'ContactController@sent')->name('sent');
     Route::get('order', 'OrderController@index');
     Route::get('orders/{order}/delete', 'OrderController@destroy');
     Route::post('product/find', 'ShopController@find'); 
+
     Route::get('order/decr/{id}/{amount}', [
     'uses' => 'OrderController@decr',
     'as' => 'order.decr'
@@ -40,8 +46,6 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::post('store-cart', 'CartController@store');
     Route::get('cart', 'CartController@index');
-    // Route::get('order/decr', 'OrderController@decrease');
-    // Route::get('order/incre', 'OrderController@incre');
 
 });
 
