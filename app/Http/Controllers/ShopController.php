@@ -25,8 +25,6 @@ class ShopController extends Controller
       
     }
 
-    
- 
 
     public function store()
     {
@@ -67,8 +65,11 @@ class ShopController extends Controller
 
     public function find(Request $request)
     {
-      $product = Product::where('name', $request->find)->get();
-      $param = ['name' => $request->name];
-      return view('shop.find', $param);
+
+      //$products = Product::find($request->name);
+
+      //return view('shop.find', ['products'=> $products]);
+      return view('shop.find')->with('products', Product::where('name', $request->name)->first());
+      
     }
 }
