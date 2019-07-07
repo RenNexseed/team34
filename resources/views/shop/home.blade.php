@@ -33,7 +33,7 @@ h1{
 
     <form action="/product/find" method="post">
       @csrf
-      <input type="text" name="find" style="width: 30%">
+      <input type="text" name="name" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
