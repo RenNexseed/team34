@@ -6,12 +6,14 @@
 <body>
 
 
+  
+  <table>
 
+  <td>{{ $products->name }}</td>
+  <td> <img src="storage/{{ $products->picture_path }}"> </td>
+  <td> {{ $products->description }}</td>
 
-  <p>あああああ</p>
-
-  {{ $param->name }}
-
+  </table>
 
 </body>
 </html>

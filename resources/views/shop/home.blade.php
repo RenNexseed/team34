@@ -35,6 +35,7 @@ h1{
       @csrf
       <input type="text" name="find" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
+
     </form>
 
       <div class="menu-items row text-center">
