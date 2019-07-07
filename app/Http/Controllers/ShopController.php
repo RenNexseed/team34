@@ -25,8 +25,6 @@ class ShopController extends Controller
       
     }
 
-    
- 
 
     public function store()
     {
@@ -65,5 +63,13 @@ class ShopController extends Controller
       return redirect('/home');
     }
 
+    public function find(Request $request)
+    {
 
+      //$products = Product::find($request->name);
+
+      //return view('shop.find', ['products'=> $products]);
+      return view('shop.find')->with('products', Product::where('name', $request->name)->first());
+      
+    }
 }

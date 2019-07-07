@@ -6,12 +6,7 @@ use Illuminate\Http\Request;
 
 class SelectcourseController extends Controller
 {
-    public function index()
-    {
-        return view('shop/selectcourse');
-      
-    }
-    public function top2()
+      public function index()
     {
         
         return view('shop/top2');
