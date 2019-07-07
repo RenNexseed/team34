@@ -14,6 +14,8 @@
   <td>   {{ $product->name }} </td>
   <td>   {{ $product->price}} </td>
   <td> <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細へ</a></td>
+  <td> <a href="/products/{{ $product->id }}/delete" class="btn btn-danger my-2">削除</td>
+  <td> <img src="/storage/{{ $product->picture_path }}"> </td>
 </tr>
   @endforeach
 </table>
