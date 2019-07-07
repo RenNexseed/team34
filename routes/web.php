@@ -18,6 +18,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/', 'SelectcourseController@index');
     Route::get('home', 'ShopController@index');
     Route::get('home/{product}', 'ShopController@show');
+    Route::get('shop', 'SelectcourseController@index');
     Route::get('open', 'ShopController@index');
     Route::get('new-products', 'ShopController@create');
     Route::post('store-products', 'ShopController@store');
@@ -26,7 +27,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-products', 'ShopController@store');
     Route::get('products/{product}/delete', 'ShopController@destroy');
     Route::get('check', 'CheckController@index'); 
-    Route::get('top2', 'SelectcourseController@index'); 
+    Route::get('top2', 'SelectcourseController@top2'); 
 });
 
 Auth::routes();
