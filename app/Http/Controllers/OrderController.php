@@ -19,7 +19,7 @@ class OrderController extends Controller
     {
         $orders = Order::with('product')->get();
         return view('shop.order', ['orders' => $orders]);
-        
+
 
     }
 
@@ -51,6 +51,24 @@ class OrderController extends Controller
         $order->save();
 
         return redirect('/order');
+    }
+
+    public function decr($id, $amount)
+    {
+        Order::where('id', $id)
+            ->update(['amount' => $amount - 1]);
+
+        //Session::flash('success', 'Order amount updated.');
+        return redirect()->back();
+    }
+
+    public function incr($id, $amount)
+    {
+        Order::where('id', $id)
+            ->update(['amount' => $amount + 1]);
+
+        //Session::flash('success', 'Order amount updated.');
+        return redirect()->back();
     }
 
     /**

@@ -29,7 +29,20 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('order', 'OrderController@index');
     Route::get('orders/{order}/delete', 'OrderController@destroy');
     Route::post('product/find', 'ShopController@find'); 
-    
+    Route::get('order/decr/{id}/{amount}', [
+    'uses' => 'OrderController@decr',
+    'as' => 'order.decr'
+]);
+    Route::get('order/incr/{id}/{amount}', [
+    'uses' => 'OrderController@incr',
+    'as' => 'order.incr'
+]);
+
+    Route::post('store-cart', 'CartController@store');
+    Route::get('cart', 'CartController@index');
+    // Route::get('order/decr', 'OrderController@decrease');
+    // Route::get('order/incre', 'OrderController@incre');
+
 });
 
 

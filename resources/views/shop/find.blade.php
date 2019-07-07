@@ -7,10 +7,13 @@
 
 
   
+  <table>
 
-  <p>{{ $products->name }}</p>
+  <td>{{ $products->name }}</td>
+  <td> <img src="storage/{{ $products->picture_path }}"> </td>
+  <td> {{ $products->description }}</td>
 
-  
+  </table>
 
 </body>
 </html>
