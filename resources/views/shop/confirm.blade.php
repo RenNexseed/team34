@@ -24,19 +24,19 @@
     <div class="form-group col-sm-4 mt-5 form-inline">
       <label for="inputZip">郵便番号</label>
         <div class="col-sm-8">
-          {{ $hoge['zip31'] }} - {{ $hoge['zip32'] }}
+          {{ $hoge['zip01'] }}
         </div>
     </div>
     <div class="form-group col-sm-4 col-form-label">
       <label for="inputState">都道府県</label>
         <div class="col-sm-8">
-          {{ $hoge['pref31'] }}
+          {{ $hoge['pref01'] }}
         </div>
     </div>
     <div class="form-group">
       <label for="inputCity" class="col-sm-4 col-form-label">市区町村</label>
         <div class="col-sm-8">
-          {{ $hoge['addr31'] }}
+          {{ $hoge['addr01'] }}
         </div>
     </div>
     <div class="form-group col-sm-4 col-form-label">

@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\Create;
 
 
 class CheckController extends Controller
 {
-    public function index()
+    public function index(CreateForm $request)
     {
         return view('shop.check');
     }
