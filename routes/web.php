@@ -40,14 +40,16 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('order/decr/{id}/{amount}', [
     'uses' => 'OrderController@decr',
     'as' => 'order.decr'
-]);
+    ]);
     Route::get('order/incr/{id}/{amount}', [
     'uses' => 'OrderController@incr',
     'as' => 'order.incr'
-]);
+    ]);
 
     Route::post('store-cart', 'CartController@store');
     Route::get('cart', 'CartController@index');
+
+    Route::get('category', 'CategoriesController@index');
 
 });
 
