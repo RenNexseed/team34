@@ -31,9 +31,9 @@ h1{
   <h1 class="text-center">商品一覧</h1>
   <div class="container">
 
-    <form action="/product/find" method="post">
+    <form action="{{ route('posts.search') }}" method="post">
       @csrf
-      <input type="text" name="find" style="width: 30%">
+      <input type="text" name="search" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
 
     </form>

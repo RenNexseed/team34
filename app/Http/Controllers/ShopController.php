@@ -72,4 +72,12 @@ class ShopController extends Controller
       return view('shop.find')->with('products', Product::where('name', $request->name)->first());
       
     }
+
+    public function search(Request $request)
+    {
+      $posts = Product::where('name', 'like' , "%{$request->search}%");
+      // Product::where('name' , 'like' , "%($request->search)%");
+      return view('shop.home',[
+        'shop'=>$posts]);
+    }
 }
