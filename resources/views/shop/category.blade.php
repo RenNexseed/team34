@@ -12,32 +12,31 @@
     </script>
     <script src="{{ asset('js/category.js') }}" defer></script>
     <link href="{{ asset('css/category.css') }}" rel="stylesheet">
+    @yield('style')
 </head>
 <body>
     <span class="menu-toggle"><i class="blogicon-reorder lg"></i>カテゴリー</span>
     <ul id='menu'>
         <li>男性服
             <ul>
-                <li><a href="{{ url('') }}">メニュー 1-1-1-1</a></li>
-                <li><a href="#">メニュー 1-1-1-2</a></li>
-                <li><a href="#">メニュー 1-1-1-3</a></li>
+                <li><a href="{{ url('showCategory') }}">Tシャツ</a></li>
+                <li><a href="{{ url('showCategory') }}">アウター</a></li>
+                <li><a href="{{ url('showCategory') }}">シャツ</a></li>
+                <li><a href="{{ url('showCategory') }}">ジャケット</a></li>
+                <li><a href="{{ url('showCategory') }}">ズボン</a></li>
             </ul>
         </li>
         <li>女性服
             <ul>
-                <li><a href="#">メニュー 1-1-1-1</a></li>
-                <li><a href="#">メニュー 1-1-1-2</a></li>
-                <li><a href="#">メニュー 1-1-1-3</a></li>
-            </ul>
-        </li>
-        <li>ユニセックス
-            <ul>
-                <li><a href="#">メニュー 1-1-1-1</a></li>
-                <li><a href="#">メニュー 1-1-1-2</a></li>
-                <li><a href="#">メニュー 1-1-1-3</a></li>
+                <li><a href="{{ url('showCategory') }}">Tシャツ</a></li>
+                <li><a href="{{ url('showCategory') }}">ワンピース</a></li>
+                <li><a href="{{ url('showCategory') }}">スカート</a></li>
+                <li><a href="{{ url('showCategory') }}">ニット</a></li>
+                <li><a href="{{ url('showCategory') }}">ジーンズ</a></li>
             </ul>
         </li>
     </ul>
+     @yield('category')
      
     <!-- <style type="text/css">
     #top-editarea{

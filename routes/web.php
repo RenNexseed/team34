@@ -50,6 +50,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('cart', 'CartController@index');
 
     Route::get('category', 'CategoriesController@index');
+    Route::get('showCategory', 'CategoriesController@show');
 
 });
 
