@@ -23,9 +23,39 @@ class CreateForm extends FormRequest
      */
     public function rules()
     {
-            return [
-            'title' => 'required|max:30',
-            'body' => 'required',
+        return [
+            'name'    => 'required',
+            'email'   => 'required|email',
+            'subject' => 'required',
+            'content' => 'required',
         ];
     }
+
+    /**
+     * Set custom messages for validator errors.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            //
+        ];
+    }
+
+    /**
+     * Set custom attributes for validator errors.
+     *
+     * @return array
+     */
+    public function attributes()
+    {
+        return [
+            'name'    => 'お名前',
+            'email'   => 'メールアドレス',
+            'subject' => '件名',
+            'content' => '内容',
+        ];
+    }
+}
 }

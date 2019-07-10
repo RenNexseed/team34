@@ -28,7 +28,8 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('products/{product}/delete', 'ShopController@destroy');
     Route::get('check', 'CheckController@index'); 
     Route::post('confirm', 'CheckController@confirm')->name('check.confirm');
-    Route::post('thanks', 'CheckController@thanks')->name('check.thanks');
+    Route::get('thanks', 'CheckController@thanks')->name('check.thanks');
+    Route::post('thanks', 'CheckController@send')->name('check.send');
     Route::get('contact', 'ContactController@index')->name('contact');
     Route::post('contact/confirm', 'ContactController@confirm')->name('confirm');
     Route::post('contact/sent', 'ContactController@sent')->name('sent');

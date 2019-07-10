@@ -11,6 +11,6 @@
         <div class="panel-body">
             <div class="well well-lg text-center">お問い合わせありがとうございました</div>
         </div>
-        <a href="{{ url('home') }}">一覧に戻る</a>
     </div>
+        <a href="{{ url('home') }}">一覧に戻る</a>
 @endsection
