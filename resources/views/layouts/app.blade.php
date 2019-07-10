@@ -10,6 +10,8 @@
     <title>{{ config('app.name', 'はじめてのネットショッピング') }}</title>
 
     <!-- Scripts -->
+    <script src="{{ asset('js/ajaxzip3.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
