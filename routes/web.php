@@ -50,7 +50,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('cart', 'CartController@index');
 
     Route::get('category', 'CategoriesController@index');
-    Route::get('showCategory', 'CategoriesController@show');
+    Route::get('showCategory/{id}', 'CategoriesController@show')->name('showCategory');
 
 });
 
