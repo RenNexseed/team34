@@ -16,7 +16,7 @@
   font-size: 30px;
   letter-spacing: 0.05em;
   color: black;
-  background-image: url(../storage/images/backimg02.jpg);
+  /*background-image: url(../storage/images/backimg02.jpg);*/
 }
 
 input{ 
@@ -62,11 +62,11 @@ h1{
               </div>
             <hr>
               <div class="row">
-              <button type="submit" class="btn btn-primary ml-3">カートに入れる</button>
+              <button type="submit" class="btn btn-primary btn-lg ml-3">カートに入れる</button>
 
             </form>
 
-            <a href="/home" class="btn btn-success ml-5">メインページに戻る</a>
+            <a href="/home" class="btn btn-success btn-lg ml-5">商品一覧ページに戻る</a>
           </div>
           </div>
         </div>

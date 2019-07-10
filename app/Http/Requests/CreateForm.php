@@ -25,9 +25,12 @@ class CreateForm extends FormRequest
     {
         return [
             'name'    => 'required',
-            'email'   => 'required|email',
-            'subject' => 'required',
-            'content' => 'required',
+            'mail'   => 'required|email',
+            'zip01' => 'required',
+            'pref01' => 'required',
+            'addr01' => 'required',
+            'addr0' => 'required',
+            'build' => 'required',
         ];
     }
 

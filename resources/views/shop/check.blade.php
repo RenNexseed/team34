@@ -35,7 +35,7 @@
     <div class="form-group row mx-auto container mt-5">
       <label for="inputState" class="col-sm-5 col-form-label">都道府県</label>
         <div class="col-sm-7">
-          <input type="text" name="pref01" size="20" value="{{ old('pref') }}">
+          <input type="text" name="pref01" size="20" value="{{ old('pref01') }}">
         </div>
     </div>
     <div class="form-group row mx-auto container mt-5">
