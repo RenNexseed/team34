@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ShopController extends Controller
 {
@@ -65,11 +66,18 @@ class ShopController extends Controller
 
     public function find(Request $request)
     {
+      $keyword = $request->input('name');
+      $products = Product::where('name', 'like', '%'.$keyword.'%');
 
       //$products = Product::find($request->name);
       //return view('shop.find', ['products'=> $products]);
       // return view('shop.find')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
-      return view('shop.home')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
+      // return view('shop.home')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
+
+      return view('shop.home',[
+            'shop' => $products,
+            'keyword' => $keyword,
+            ]);
     }
 
     public function search(Request $request)
