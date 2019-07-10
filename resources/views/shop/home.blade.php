@@ -10,7 +10,7 @@
   font-size: 30px;
   letter-spacing: 0.05em;
   color:black;
-  background-image: url(storage/images/backimg02.jpg);
+  /*background-image: url(storage/images/backimg02.jpg);*/
 }
 
 input{ 
@@ -31,9 +31,9 @@ h1{
   <h1 class="text-center">商品一覧</h1>
   <div class="container">
 
-    <form action="{{ route('posts.search') }}" method="post">
+    <form action="{{ 'product/find'}}" method="post">
       @csrf
-      <input type="text" name="search" style="width: 30%">
+      <input type="text" name="name" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
@@ -41,13 +41,13 @@ h1{
       <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
-        <div class="card col-4">
-          <img src="storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:300px;">
+        <div class="card col-2.99 m-3">
+          <img src="storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">
           <div class="card-body">
             <h2 class="menu-item-name">{{ $product->name }}</h2>
           </div> 
           <ul class="list-group list-group-flush">
-                  <li class="list-group-item price">¥{{ $product->price}}</li>
+                  <li class="list-group-item price" style="font-size: 24px">¥{{ $product->price}}</li>
                   <li class="list-group-item">
                     <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a>
                   </li>
@@ -55,4 +55,9 @@ h1{
               </div>
             <?php endforeach ?>
           </div>
+        </div>
+
+         </body>
+
+</html>
 @endsection
