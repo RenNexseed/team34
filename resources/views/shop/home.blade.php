@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@extends('shop.category')
 @section('title')
 @endsection
 
@@ -28,7 +27,7 @@ h1{
 
 
 @section('content')
-  <h1 class="text-center">商品一覧</h1>
+  <h1 class="text-center">商品一覧</h1> 
   <div class="container">
 
     <form action="/product/find" method="post">
@@ -38,6 +37,7 @@ h1{
 
     </form>
 
+  @section('category')
 
       <div class="menu-items row text-center">
 
@@ -59,4 +59,7 @@ h1{
 
 @endsection
 @section('style')
+@endsection
+
+@section('footer')
 @endsection

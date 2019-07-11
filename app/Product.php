@@ -12,12 +12,4 @@ class Product extends Model
       return $this->hasOne('App\Order');
     }
 
-    public function men()
-    {
-      $products = App\Product::where('products', 1)
-               ->orderBy('name', 'desc')
-               ->take(10)
-               ->get();
-    }
-
 }

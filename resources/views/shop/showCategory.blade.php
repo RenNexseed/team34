@@ -5,9 +5,13 @@
 
 <table>
 
-  <td>{{ $products->id }}</td>
-  <td> <img src="storage/{{ $products->picture_path }}"> </td>
-  <td> {{ $products->description }}</td>
+  @foreach($products as $product)
+                        
+  <td>{{ $product->id }}</td>
+  <td> <img src="storage/{{ $product->picture_path }}"> </td>
+  <td> {{ $product->description }}</td>
+
+  @endforeach
 
 </table>
 

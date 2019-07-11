@@ -15,28 +15,31 @@
     @yield('style')
 </head>
 <body>
-    <span class="menu-toggle"><i class="blogicon-reorder lg"></i>カテゴリー</span>
-    <ul id='menu'>
-        <li>男性服
-            <ul>
-                @foreach($categories as $category)
-                    @if($category -> category_type == 1)
-                    <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
-                    @endif
-                @endforeach
-            </ul>
-        </li>
-        <li>女性服
-            <ul>
-                @foreach($categories as $category)
-                    @if($category -> category_type == 2)
-                    <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
-                    @endif
-                @endforeach
-            </ul>
-        </li>
-    </ul>
-     @yield('category')
+    <div>
+        
+        <span class="menu-toggle"><i class="blogicon-reorder lg"></i>カテゴリー</span>
+        <ul id='menu'>
+            <li>男性服
+                <ul>
+                    @foreach($categories as $category)
+                        @if($category -> category_type == 1)
+                        <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
+                        @endif
+                    @endforeach
+                </ul>
+            </li>
+            <li>女性服
+                <ul>
+                    @foreach($categories as $category)
+                        @if($category -> category_type == 2)
+                        <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
+                        @endif
+                    @endforeach
+                </ul>
+            </li>
+        </ul>
+         @yield('category')
+    </div>
      
     
 </body>
