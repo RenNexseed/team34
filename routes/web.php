@@ -32,8 +32,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('thanks', 'CheckController@thanks')->name('check.thanks');
     Route::get('order', 'OrderController@index');
     Route::get('orders/{order}/delete', 'OrderController@destroy');
-    Route::post('product/find', 'ShopController@find');
-    Route::post('posts/search', 'ShopController@search')->name('posts.search');
+    Route::post('product/find', 'ShopController@find'); //検索機能
 
     Route::get('order/decr/{id}/{amount}', [
     'uses' => 'OrderController@decr',
