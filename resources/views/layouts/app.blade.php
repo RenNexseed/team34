@@ -22,8 +22,21 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
+
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function(){
+        $(".menu-toggle").on("click", function() {
+            $(this).next().slideToggle();
+        });
+    });
+    </script>
+    <script src="{{ asset('js/category.js') }}" defer></script>
+    <link href="{{ asset('css/category.css') }}" rel="stylesheet">
 </head>
 <body>
+
+<!-- ヘッダー -->
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -76,10 +89,59 @@
                 </div>
             </div>
         </nav>
+        <div class="category">
+
+<!-- トグルメニュー -->
+        <span class="menu-toggle"><i class="blogicon-reorder lg"></i>カテゴリー</span>
+        <ul id='menu'>
+            <li>男性服
+                <ul>
+                    @foreach($categories as $category)
+                        @if($category -> category_type == 1)
+                        <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
+                        @endif
+                    @endforeach
+                </ul>
+            </li>
+            <li>女性服
+                <ul>
+                    @foreach($categories as $category)
+                        @if($category -> category_type == 2)
+                        <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
+                        @endif
+                    @endforeach
+                </ul>
+            </li>
+        </ul>
+         @yield('category')
+    </div>
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+
+<!-- フッター -->
+    <footer>
+        <div class="footerv2-w3ls">
+            <div class="container-fluid py-5 footer-copy_w3ls">
+                <div class="d-lg-flex justify-content-between">
+                    <div class="mt-2 sub-some align-self-lg-center">
+                        
+                    </div>
+                    <div class="cpy-right align-self-center">
+                        <h2 class="agile_btxt">
+                                <span>は</span>じめての
+                                <span>ネ</span>ットショッピング
+                        </h2>
+                        <p>© 2018 Fashion Hub. All rights reserved | Design by
+                            <a href="http://w3layouts.com" class="text-secondary"> W3layouts.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @yield('footer')
+    </footer>
 </body>
 </html>

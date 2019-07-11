@@ -26,8 +26,8 @@ h1{
 </style>
 
 
-
 @section('content')
+
   <h1 class="text-center">商品一覧画面</h1>
   <div class="container">
 
@@ -37,6 +37,8 @@ h1{
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
+
+  @section('category')
 
       <div class="menu-items row text-center">
 
@@ -57,7 +59,9 @@ h1{
           </div>
         </div>
 
-         </body>
+@endsection
+@section('style')
+@endsection
 
-</html>
+@section('footer')
 @endsection
