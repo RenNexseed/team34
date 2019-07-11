@@ -28,21 +28,21 @@ h1{
 
 
 @section('content')
-  <h1 class="text-center">商品一覧</h1>
+  <h1 class="text-center">商品検索画面</h1>
   <div class="container">
 
     <form action="{{ 'product/find'}}" method="post">
       @csrf
       <input type="text" name="name" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
-
+      <a href="/home" class="btn btn-secondary ml-5">商品一覧ページに戻る</a>
     </form>
 
       <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
         <div class="card col-2.99 m-3">
-          <img src="storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">
+          <img src="../storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">
           <div class="card-body">
             <h2 class="menu-item-name">{{ $product->name }}</h2>
           </div> 
@@ -55,6 +55,7 @@ h1{
               </div>
             <?php endforeach ?>
           </div>
+          <a href="/home" class="btn btn-outline-secondary btn-lg btn-block mt-3">商品一覧ページに戻る</a>
         </div>
 
          </body>
