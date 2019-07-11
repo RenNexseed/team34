@@ -4,9 +4,8 @@
 @endsection
 @section('content')
 
-  <div><h1>お届け先</h1></div>
-  <div><h2>住所</h2></div>
-  <form class="form-inline" action="{{ route('check.thanks')}}" method="post">
+  <h1 class="mt-5">最終確認画面</h1>
+  <form class="form-inline mx-auto mt-5" action="{{ route('check.thanks')}}" method="post">
     @csrf
     <div class="form-group row mx-auto container">
       <label for="name" class="form-controll col-sm-5" id="name">お名前</label>

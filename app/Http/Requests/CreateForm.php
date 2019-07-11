@@ -13,7 +13,7 @@ class CreateForm extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -33,6 +33,18 @@ class CreateForm extends FormRequest
             'build' => 'required',
         ];
     }
+    public function attributes()
+{
+    return [
+            'name'    => '名前',
+            'mail'   => 'メール',
+            'zip01' => '郵便番号',
+            'pref01' => '都道府県',
+            'addr01' => '市区町村',
+            'addr0' => '後の住所',
+            'build' => 'ビル、マンション',
+    ];
+}
 
     /**
      * Set custom messages for validator errors.
