@@ -61,3 +61,7 @@
   padding: ; /* 画像を下げた分、それを下回らない適切なmarginまたはpaddingを設定してください */
   /*background-color: #ddd;*/
 /*}*/
+h1{
+  text-align: center;
+  font-family: "Noto Sans CJK JP"; font-weight:900;
+}

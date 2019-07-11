@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class PostSent extends Mailable
+class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -26,9 +26,11 @@ class PostSent extends Mailable
      *
      * @return $this
      */
-    public function build(Request $request)
+    public function build()
     {
-        return $this->view('mail');
-    
+        return $this
+        ->from('example@example.com')
+        ->subject('テスト送信完了')
+        ->view('emails.test');
     }
 }
