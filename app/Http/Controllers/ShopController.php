@@ -64,27 +64,10 @@ class ShopController extends Controller
       return redirect('/home');
     }
 
-    public function find(Request $request)
+    public function find(Request $request) //検索の際に使用するfing関数
     {
-      $keyword = $request->input('name');
-      $products = Product::where('name', 'like', '%'.$keyword.'%');
-
-      //$products = Product::find($request->name);
-      //return view('shop.find', ['products'=> $products]);
-      // return view('shop.find')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
-      // return view('shop.home')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
-
-      return view('shop.home',[
-            'shop' => $products,
-            'keyword' => $keyword,
-            ]);
+      return view('shop.find')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
+      
     }
 
-    public function search(Request $request)
-    {
-      $posts = Product::where('name', 'like' , "%{$request->search}%");
-      // Product::where('name' , 'like' , "%($request->search)%");
-      return view('shop.search',[
-        'shop'=>$posts]);
-    }
 }

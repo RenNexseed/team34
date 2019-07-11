@@ -3,6 +3,12 @@
 届け先
 @endsection
 @section('content')
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
 
   <div class="panel panel-default">
         <div class="panel-heading">
@@ -11,6 +17,8 @@
         <div class="panel-body">
             <div class="well well-lg text-center">お問い合わせありがとうございました</div>
         </div>
-        <a href="{{ url('home') }}">一覧に戻る</a>
     </div>
+        <a href="{{ url('home') }}">一覧に戻る</a>
+</body>
+</html>
 @endsection
