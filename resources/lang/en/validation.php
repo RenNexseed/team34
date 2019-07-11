@@ -57,7 +57,7 @@ return [
     'image'                => 'The :attribute must be an image.',
     'in'                   => 'The selected :attribute is invalid.',
     'in_array'             => 'The :attribute field does not exist in :other.',
-    'integer'              => 'The :attribute must be an integer.',
+    'integer'              => ':attribute は数字で入力してください',
     'ip'                   => 'The :attribute must be a valid IP address.',
     'ipv4'                 => 'The :attribute must be a valid IPv4 address.',
     'ipv6'                 => 'The :attribute must be a valid IPv6 address.',
@@ -93,7 +93,7 @@ return [
     'numeric'              => 'The :attribute must be a number.',
     'present'              => 'The :attribute field must be present.',
     'regex'                => 'The :attribute format is invalid.',
-    'required'             => 'The :attribute field is required.',
+    'required'             => ':attribute の入力は必須です。',
     'required_if'          => 'The :attribute field is required when :other is :value.',
     'required_unless'      => 'The :attribute field is required unless :other is in :values.',
     'required_with'        => 'The :attribute field is required when :values is present.',
@@ -143,7 +143,14 @@ return [
 
     'attributes' => [
         'email' => 'メールアドレス',
-        'string' => 'パスワード'
+        'string' => 'パスワード',
+        'name' => '名前',
+        'mail' => 'メールアドレス',
+        'zip01' => '郵便番号',
+        'pref01' => '都道府県',
+        'addr01' => '市区町村',
+        'addr0' => '住所',
+        'check' => 'テェックボックス',
     ],
 
 ];
