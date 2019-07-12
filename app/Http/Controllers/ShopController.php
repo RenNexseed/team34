@@ -69,5 +69,10 @@ class ShopController extends Controller
       return view('shop.find')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
       
     }
+    // public function category(Request $request)
+    // {
+    //   return view('shop.find')->with('category', Product::where('category', 'like' , "%{$request->category}%")->get());
+      
+    // }
 
 }
