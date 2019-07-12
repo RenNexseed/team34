@@ -96,20 +96,23 @@
         <ul id='menu'>
             <li>男性服
                 <ul>
-                    @foreach($categories as $category)
-                        @if($category -> category_type == 1)
-                        <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
-                        @endif
-                    @endforeach
+
+                    <li><a href="{{ route('find', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>
+                    <li><a href="{{ route('find', ['category' => 'アウター']) }}">アウター</a></li>
+                    <li><a href="{{ route('find', ['category' => 'シャツ']) }}">シャツ</a></li>
+                    <li><a href="{{ route('find', ['category' => 'ジャケット']) }}">ジャケット</a></li>
+                    <li><a href="{{ route('find', ['category' => 'ズボン']) }}">ズボン</a></li>
+
                 </ul>
             </li>
             <li>女性服
                 <ul>
-                    @foreach($categories as $category)
-                        @if($category -> category_type == 2)
-                        <li><a href="{{ route('showCategory', ['id' => $category->category_id]) }}">{{ $category -> category_name }}</a></li>
-                        @endif
-                    @endforeach
+                    <li><a href="{{ route('find', ['category' => 'ladysTシャツ']) }}">Tシャツ</a></li>
+                    <li><a href="{{ route('find', ['category' => 'ワンピース']) }}">ワンピース</a></li>
+                    <li><a href="{{ route('find', ['category' => 'スカート']) }}">スカート</a></li>
+                    <li><a href="{{ route('find', ['category' => 'ニット']) }}">ニット</a></li>
+                    <li><a href="{{ route('find', ['category' => 'ジーンズ']) }}">ジーンズ</a></li>
+
                 </ul>
             </li>
         </ul>

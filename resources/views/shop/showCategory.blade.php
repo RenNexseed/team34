@@ -11,6 +11,7 @@
   <td> <img src="storage/{{ $product->picture_path }}"> </td>
   <td> {{ $product->description }}</td>
 
+  @yield('list')
   @endforeach
 
 </table>

@@ -15,9 +15,17 @@
   <div class="form-group">
     <label for="exampleFormControlSelect1">カテゴリー番号</label>
     <select class="form-control" id="exampleFormControlSelect1" name="category">
-      <option>0</option>
-      <option>1</option>
-      <option>2</option>
+
+      <option>mensTシャツ</option>
+      <option>アウター</option>
+      <option>シャツ</option>
+      <option>ジャケット</option>
+      <option>ズボン</option>
+      <option>ladysTシャツ</option>
+      <option>ワンピース</option>
+      <option>スカート</option>
+      <option>ニット</option>
+      <option>ジーンズ</option>
     </select>
   </div>
   <div class="form-group">
