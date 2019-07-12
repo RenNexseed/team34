@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use App\Product;
+use App\User;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 
@@ -17,7 +19,11 @@ class OrderController extends Controller
      */
     public function index(Request $request)
     {
-        $orders = Order::with('product')->get();
+        $user = Auth::user();
+        $orders = Order::with('product','user')->where("user_id", $user->id)->get();
+
+        //$orders = $user->load('orders');
+
         
         return view('shop.order', ['orders' => $orders]);
 
@@ -46,6 +52,8 @@ class OrderController extends Controller
         $order->product_id =  $request->product_id;
 
         $order->amount = $request->amount;
+        $order->user_id = $request->user()->id;
+
 
 
         $order->save();
