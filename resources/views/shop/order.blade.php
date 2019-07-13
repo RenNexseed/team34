@@ -7,6 +7,8 @@
 </head>
 
    <h2>このカートの中には{{ $orders->count() }}個商品があります。</h2>
+   
+   
    <form action="store-cart" method="post">
     @csrf
 

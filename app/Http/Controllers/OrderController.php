@@ -22,7 +22,7 @@ class OrderController extends Controller
         $user = Auth::user();
         $orders = Order::with('product','user')->where("user_id", $user->id)->get();
 
-        //$orders = $user->load('orders');
+        
 
         
         return view('shop.order', ['orders' => $orders]);

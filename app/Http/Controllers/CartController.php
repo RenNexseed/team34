@@ -76,7 +76,7 @@ class CartController extends Controller
 
         DB::table('orders')->delete();
          
-        return redirect('/cart');
+        return view('shop.check');
     }
 
     /**
