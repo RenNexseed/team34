@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Create products</title>
+  <title>商品追加ページ</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -40,7 +40,7 @@
     <label for="exampleFormControlTextarea1">商品説明</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
   </div>
-  <button type="submit" class="btn btn-success">New Products</button> 
+  <button type="submit" class="btn btn-success">商品作成</button> 
 </form>
 </div>
 
