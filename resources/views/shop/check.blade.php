@@ -1,7 +1,5 @@
 @extends('layouts.app')
-@section('title')
-届け先
-@endsection
+
 @section('content')
   <h1 class="mx-auto mt-5">お届け先住所</h1>
   <form class="form-inline mt-5" action="{{ route('check.confirm')}}" method="post">
@@ -64,7 +62,7 @@
     <div class="form-group row mx-auto container mt-5">
       <label for="inputAddress" class="col-sm-5 col-form-label">町名・番地</label>
         <div class="col-sm-7">
-      <input type="text" class="form-control{{ $errors->has('addr0') ? ' is-invalid' : '' }}" required autofocus id="inputAddress"name="addr0" size="60" value="{{ old('addr0') }}">
+      <input type="text" class="form-control {{ $errors->has('addr0') ? ' is-invalid' : '' }}" required autofocus id="inputAddress"name="addr0" size="60" value="{{ old('addr0') }}">
       @if ($errors->has('addr0'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('addr0') }}</strong>

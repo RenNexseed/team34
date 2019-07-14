@@ -1,7 +1,5 @@
 @extends('layouts.app')
-@section('title')
-届け先
-@endsection
+
 @section('content')
 
   <h1 class="mt-5">最終確認画面</h1>
@@ -52,8 +50,6 @@
   <div class="form-group container row mt-5">
     <div class="mx-auto">
   <button type="button" class="btn btn-primary" onclick=history.back()>戻る</button>
-    </div>
-    <div class="mx-auto">
   <button type="submit" class="btn btn-primary" href="{{ route('check.thanks') }}">確定する</button>
 </div>
   </div>

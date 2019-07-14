@@ -42,6 +42,6 @@ class CheckController extends Controller
             $message->from('firsttime.netshopping@gmail.com', 'はじめてのネットショッピング');
         });
         $request->session()->regenerateToken();
-        return view('shop.thanks', ['hoge' => $data]);
+        return view('shop.thanks');
     }
 }
