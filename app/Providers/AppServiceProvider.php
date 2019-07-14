@@ -13,8 +13,6 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    
-
     /**
      * Register any application services.
      *

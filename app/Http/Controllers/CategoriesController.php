@@ -15,3 +15,5 @@ class CategoriesController extends Controller
         return view('shop/find',["products" => $products]);
     }
 }
+
+// return view('shop.find')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());

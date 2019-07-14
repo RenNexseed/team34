@@ -38,6 +38,8 @@ h1{
 
     </form>
 
+  @section('category')
+
       <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
@@ -60,6 +62,7 @@ h1{
 @endsection
 @section('style')
 @endsection
+
 
 @section('footer')
 @endsection
