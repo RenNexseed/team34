@@ -31,11 +31,12 @@ h1{
   <h1 class="text-center">商品検索画面</h1>
   <div class="container">
 
-    <form action="{{ 'product/find'}}" method="post">
+    <form action="{{'find'}}" method="post">
       @csrf
       <input type="text" name="name" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
       <a href="/home" class="btn btn-secondary ml-5">商品一覧ページに戻る</a>
+      <h4 class="text-left">合計{{ $products->count() }}件の検索結果が見つかりました</h4>
     </form>
 
       <div class="menu-items row text-center">
@@ -60,5 +61,7 @@ h1{
 
          </body>
 
-</html>
 @endsection
+@section('footer')
+@endsection
+</html>

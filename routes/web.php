@@ -32,7 +32,9 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('thanks', 'CheckController@thanks')->name('check.thanks');//メールの送信とthanksページの表示
     Route::get('order', 'OrderController@index');
     Route::get('orders/{order}/delete', 'OrderController@destroy');
-    Route::post('product/find', 'ShopController@find'); //検索機能
+    Route::post('product/find', 'ShopController@find');//検索機能
+
+    Route::get('find/{category}', 'CategoriesController@show')->name('find'); //カテゴリ機能
 
     Route::get('order/decr/{id}/{amount}', [
     'uses' => 'OrderController@decr',
@@ -46,8 +48,8 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-cart', 'CartController@store');
     Route::get('cart', 'CartController@index');
 
-    Route::get('category', 'CategoriesController@index');
-    Route::get('showCategory/{id}', 'CategoriesController@show')->name('showCategory');
+    
+    // Route::get('showCategory/{id}', 'CategoriesController@show')->name('showCategory');
 
 });
 

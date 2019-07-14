@@ -63,5 +63,6 @@ h1{
 @section('style')
 @endsection
 
+
 @section('footer')
 @endsection
