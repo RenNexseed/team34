@@ -12,6 +12,6 @@ class CategoriesController extends Controller
     public function show($id)
     {
         $products = Product::where('category', $id)->get();
-        return view('shop/showCategory',["products" => $products]);
+        return view('shop/find',["products" => $products]);
     }
 }

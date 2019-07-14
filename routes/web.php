@@ -48,9 +48,6 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-cart', 'CartController@store');
     Route::get('cart', 'CartController@index');
 
-    
-    // Route::get('showCategory/{id}', 'CategoriesController@show')->name('showCategory');
-
 });
 
 
