@@ -89,6 +89,8 @@
                 </div>
             </div>
         </nav>
+            @yield('content')
+    </div>
         <div class="category">
 
 <!-- トグルメニュー -->
@@ -120,7 +122,6 @@
     </div>
 
         <main class="py-4">
-            @yield('content')
         </main>
     </div>
 

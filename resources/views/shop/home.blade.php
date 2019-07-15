@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title')
 @endsection
+@section('content')
 
 <style>
   body {
@@ -24,9 +25,8 @@ h1{
 
 
 </style>
+@section('category')
 
-
-@section('content')
 
   <h1 class="text-center">商品一覧画面</h1>
   <div class="container">
@@ -38,7 +38,7 @@ h1{
 
     </form>
 
-  @section('category')
+ 
 
       <div class="menu-items row text-center">
 
