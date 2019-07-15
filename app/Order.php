@@ -11,10 +11,4 @@ class Order extends Model
       return $this->belongsTo('App\Product');
 
     }
-
-     // public function getData()
-     // {
-     //    return $this->id .':' . $this->amount . '('
-     //     . $this->product->name.$this->product->description.')';
-     //  }
 }

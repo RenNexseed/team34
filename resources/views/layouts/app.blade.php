@@ -89,6 +89,8 @@
                 </div>
             </div>
         </nav>
+            @yield('content')
+    </div>
         <div class="category">
 
 <!-- トグルメニュー -->
@@ -120,7 +122,6 @@
     </div>
 
         <main class="py-4">
-            @yield('content')
         </main>
     </div>
 
@@ -137,7 +138,7 @@
                                 <span>は</span>じめての
                                 <span>ネ</span>ットショッピング
                         </h2>
-                        <p>© 2018 Fashion Hub. All rights reserved | Design by
+                        <p>© 2019 Fashion Hub. All rights reserved | Design by
                             <a href="http://w3layouts.com" class="text-secondary"> W3layouts.</a>
                         </p>
                     </div>
