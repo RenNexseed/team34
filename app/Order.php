@@ -12,9 +12,11 @@ class Order extends Model
 
     }
 
-     // public function getData()
-     // {
-     //    return $this->id .':' . $this->amount . '('
-     //     . $this->product->name.$this->product->description.')';
-     //  }
+
+    public function user()
+    {
+      return $this->belongsTo('App\User');
+    }
+
+     
 }

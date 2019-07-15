@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title')
 @endsection
+@section('content')
 
 <style>
   body {
@@ -24,21 +25,22 @@ h1{
 
 
 </style>
+@section('category')
 
-
-@section('content')
 
   <h1 class="text-center">商品一覧画面</h1>
   <div class="container">
 
     <form action="{{ 'product/find' }}" method="post">
       @csrf
+
       <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
+
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
 
-  @section('category')
+ 
 
       <div class="menu-items row text-center">
 

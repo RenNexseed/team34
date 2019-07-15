@@ -22,8 +22,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
-
-     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script>
     $(function(){
         $(".menu-toggle").on("click", function() {
@@ -31,7 +29,6 @@
         });
     });
     </script>
-    <script src="{{ asset('js/category.js') }}" defer></script>
     <link href="{{ asset('css/category.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -89,6 +86,8 @@
                 </div>
             </div>
         </nav>
+            @yield('content')
+    </div>
         <div class="category">
 
 <!-- トグルメニュー -->
@@ -120,7 +119,6 @@
     </div>
 
         <main class="py-4">
-            @yield('content')
         </main>
     </div>
 
@@ -137,7 +135,7 @@
                                 <span>は</span>じめての
                                 <span>ネ</span>ットショッピング
                         </h2>
-                        <p>© 2018 Fashion Hub. All rights reserved | Design by
+                        <p>© 2019 Fashion Hub. All rights reserved | Design by
                             <a href="http://w3layouts.com" class="text-secondary"> W3layouts.</a>
                         </p>
                     </div>
