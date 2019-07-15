@@ -22,8 +22,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
-
-     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script>
     $(function(){
         $(".menu-toggle").on("click", function() {
@@ -31,7 +29,6 @@
         });
     });
     </script>
-    <script src="{{ asset('js/category.js') }}" defer></script>
     <link href="{{ asset('css/category.css') }}" rel="stylesheet">
 </head>
 <body>

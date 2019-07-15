@@ -28,6 +28,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function order()
+    {
+        return $this->hasMnay('App\Order');
+    }
+
     // public function shops()
     // {
     //     return $this->hasMany('App\Shop');

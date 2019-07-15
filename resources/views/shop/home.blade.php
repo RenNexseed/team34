@@ -33,7 +33,9 @@ h1{
 
     <form action="{{ 'product/find' }}" method="post">
       @csrf
+
       <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
+
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
