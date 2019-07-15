@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ShopController extends Controller
 {
@@ -63,13 +64,10 @@ class ShopController extends Controller
       return redirect('/home');
     }
 
-    public function find(Request $request)
+    public function find(Request $request) //検索の際に使用するfing関数
     {
-
-      //$products = Product::find($request->name);
-
-      //return view('shop.find', ['products'=> $products]);
-      return view('shop.find')->with('products', Product::where('name', $request->name)->first());
+      return view('shop.find')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
       
     }
+
 }

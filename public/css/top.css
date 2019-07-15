@@ -4,3 +4,64 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+.container1{
+    
+    text-align: middle;
+    : 400px;
+}
+.container2{
+    vertical-align:middle;
+    margin-top:100px; 
+    
+}
+.img2{
+    margin-top: 300px;
+    vertical-align: middle;
+    width: 960px;
+    padding-top: 70px;
+
+}
+.wrapper {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 960px;
+/*  padding-right: 10px;
+  padding-left:  10px;*/
+  vertical-align: middle;
+}
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: all 0.5s ease 0s;
+}
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background: rgb(39, 225, 206);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(39, 225, 206);
+    border-image: initial;
+}
+
+#fh5co-hero .btn.btn-primary {
+    padding: 14px 30px !important;
+}
+#fh5co-hero .btn {
+    font-size: 24px;
+}
+/*.flexslider .slides img {
+    height: auto;
+    position: relative;
+  margin: 0;  重なるとはどういう状態か確認できるようにここでは0を指定しています 
+  padding: ; /* 画像を下げた分、それを下回らない適切なmarginまたはpaddingを設定してください */
+  /*background-color: #ddd;*/
+/*}*/
+h1{
+  text-align: center;
+  font-family: "Noto Sans CJK JP"; font-weight:900;
+}

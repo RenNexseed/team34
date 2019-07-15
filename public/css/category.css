@@ -1,0 +1,11 @@
+ul {
+  display: none;
+}
+
+span {
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
