@@ -44,7 +44,7 @@ h1{
 
       <?php foreach ($products as $product): ?>
         <div class="card col-2.99 m-3">
-          <img src="storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">
+          <img src="storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px; width: 250px">
           <div class="card-body">
             <h2 class="menu-item-name">{{ $product->name }}</h2>
           </div> 
