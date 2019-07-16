@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 use App\Cart;
 use App\Order;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
@@ -16,7 +18,8 @@ class CartController extends Controller
     public function index()
     {
 
-        $carts = Cart::all();
+        $user = Auth::user();
+        $carts = Cart::with('product','user')->where("user_id", $user->id)->get();
 
         return view('shop.cart', ['carts' => $carts]);
     }
@@ -39,19 +42,41 @@ class CartController extends Controller
      */
     public function store()
     {
-        $cart = new Cart();
-        $orders = Order::all();
-
-        $cart->product_id =  $orders->product_id;
-
-        $cart->amount = $orders->amount;
-
+        // $carts = new Cart();
+        // $orders = Order::all();
+        // foreach($carts as $cart){
+        // $cart->product_id = $orders->product_id;
+        // $cart->amount = $orders->amount;
+        
         
 
+       $orders = Order::all();
+       $count = count($orders);
+       $data = [];
 
-        $cart->save();
+       foreach($orders as $order){
+            $data[] = [
+                'amount' => $order->amount,
+                'product_id' => $order->product_id,
+                'user_id' => $order->user_id
+            ];
+           // for ($i=0; $i < $count; $i++) {
+                //$data[] = $d;
+            
+         // ['amount' => $order->amount,
+         // 'product_id' => $order->product_id]
+            // };
+        };
+         // var_dump($data);
+         // exit;
 
-        return redirect('/cart');
+
+        // $cart->save();
+        $cli = DB::table('carts')->insert($data);
+
+        DB::table('orders')->delete();
+         
+        return view('shop.check');
     }
 
     /**

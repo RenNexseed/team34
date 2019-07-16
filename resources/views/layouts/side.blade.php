@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/side.css">
 </head>
 <body>
-<div id="outer">
+<div id="outer" class="navbar-fixed-left">
     <div id="left" class="sticky">
     <div class="left-title">カテゴリー</div>
     <div class="link">
