@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="bg-img_2 moji1">
-  <h1 class="mx-auto mt-5">お届け先住所</h1>
+  <h1 class="mx-auto mt-5 midashi">お届け先住所</h1>
   <form class="form-inline mt-5 moji1" action="{{ route('check.confirm')}}" method="post">
     @csrf
     <div class="form-group row mx-auto container">
@@ -98,10 +98,12 @@
                   <label for="trigger" class="close_button">✖️</label>
                   <h2 style="text-align: center;" class="border-bottom">入力お疲れ様です！</h2>
                   <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>実際にこちらのアドレスに届くようになっています。こちらでお届け先などを確認して確定ボタンを押しましょう。</h3>
-                  <button type="submit" class="btn btn-primary mr-5">購入確認ページへ</button>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">購入確認ページへ</button>
+                    </div>
                 </div>
             </div>
-          <label for="trigger" class="col-sm-7 open_button rounded btn btn-primary" href="{{ route('check.confirm') }}">OPEN</label>
+          <label for="trigger" class="col-sm-7 open_button btn btn-primary" href="{{ route('check.confirm') }}">OPEN</label>
       </div>
     </div>
   </form>
