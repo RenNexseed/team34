@@ -94,16 +94,11 @@
                         
                     </div>
                     <div class="cpy-right align-self-center">
-                        <h2 class="agile_btxt">
-                                <span style="color:#f0475f;font-size: 60px">は</span>じめての
-                                <span style="color:#f0475f;font-size: 60px">ネ</span>ットショッピング
-                        </h2>
                         <p>はじめてのネットショッピング | Created by team34 </p>
                     </div>
                 </div>
             </div>
         </div>
-        
     </footer>
 </body>
 </html>

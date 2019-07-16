@@ -6,7 +6,7 @@
     <aside id="fh5co-hero">
               <div class="text-center">
                 <div class="slider-text-inner container1">
-                  <img alt="logo" src="{{url('../images/logo2.png')}}" class="img2"><br>
+                  <img alt="logo" src="{{url('../images/logo2.png')}}" class="img2">
                 </div>
                   <a href="{{ url('home') }}" class="btn btn-primary btn-lg container2">はじめる</a>
               </div>
