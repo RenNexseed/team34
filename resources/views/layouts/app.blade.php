@@ -7,12 +7,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'はじめてのネットショッピング') }}</title>
+    <title>{{ config('app.name', 'はじめてのネットショッピング') }}@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/ajaxzip3.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
+    </script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -22,17 +23,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
-
-     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script>
-    $(function(){
-        $(".menu-toggle").on("click", function() {
-            $(this).next().slideToggle();
-        });
-    });
-    </script>
-    <script src="{{ asset('js/category.js') }}" defer></script>
-    <link href="{{ asset('css/category.css') }}" rel="stylesheet">
+    @yield('style')
 </head>
 <body>
 
@@ -89,45 +80,12 @@
                 </div>
             </div>
         </nav>
+    </div>
             @yield('content')
-    </div>
-        <div class="category">
-
-<!-- トグルメニュー -->
-        <span class="menu-toggle"><i class="blogicon-reorder lg"></i>カテゴリー</span>
-        <ul id='menu'>
-            <li>男性服
-                <ul>
-
-                    <li><a href="{{ route('find', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>
-                    <li><a href="{{ route('find', ['category' => 'アウター']) }}">アウター</a></li>
-                    <li><a href="{{ route('find', ['category' => 'シャツ']) }}">シャツ</a></li>
-                    <li><a href="{{ route('find', ['category' => 'ジャケット']) }}">ジャケット</a></li>
-                    <li><a href="{{ route('find', ['category' => 'ズボン']) }}">ズボン</a></li>
-
-                </ul>
-            </li>
-            <li>女性服
-                <ul>
-                    <li><a href="{{ route('find', ['category' => 'ladysTシャツ']) }}">Tシャツ</a></li>
-                    <li><a href="{{ route('find', ['category' => 'ワンピース']) }}">ワンピース</a></li>
-                    <li><a href="{{ route('find', ['category' => 'スカート']) }}">スカート</a></li>
-                    <li><a href="{{ route('find', ['category' => 'ニット']) }}">ニット</a></li>
-                    <li><a href="{{ route('find', ['category' => 'ジーンズ']) }}">ジーンズ</a></li>
-
-                </ul>
-            </li>
-        </ul>
-         @yield('category')
-    </div>
-
-        <main class="py-4">
-        </main>
-    </div>
 
 <!-- フッター -->
     <footer>
-        <div class="footerv2-w3ls">
+        <div class="footerv2-w3ls fixed">
             <div class="container-fluid py-5 footer-copy_w3ls">
                 <div class="d-lg-flex justify-content-between">
                     <div class="mt-2 sub-some align-self-lg-center">
@@ -145,7 +103,7 @@
                 </div>
             </div>
         </div>
-        @yield('footer')
+        
     </footer>
 </body>
 </html>

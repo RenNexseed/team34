@@ -1,7 +1,10 @@
+@extends('layouts.side')
+
 @extends('layouts.app')
-@section('title')
+@section('style')
 @endsection
-@section('content')
+
+
 
 <style>
   body {
@@ -25,8 +28,10 @@ h1{
 
 
 </style>
-@section('category')
+@section('content')
 
+
+@section('sidebar')
 
   <h1 class="text-center">商品一覧画面</h1>
   <div class="container">
@@ -38,7 +43,8 @@ h1{
 
     </form>
 
- 
+
+
 
       <div class="menu-items row text-center">
 
@@ -60,9 +66,6 @@ h1{
         </div>
 
 @endsection
-@section('style')
-@endsection
 
 
-@section('footer')
-@endsection
+

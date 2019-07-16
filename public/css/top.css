@@ -1,3 +1,7 @@
+ul{
+list-style: none;
+}
+
 .bg-img {
   background-image: url(../images/bg1.jpg); 
   background-size: cover;
@@ -54,14 +58,10 @@
 #fh5co-hero .btn {
     font-size: 24px;
 }
-/*.flexslider .slides img {
-    height: auto;
-    position: relative;
-  margin: 0;  重なるとはどういう状態か確認できるようにここでは0を指定しています 
-  padding: ; /* 画像を下げた分、それを下回らない適切なmarginまたはpaddingを設定してください */
-  /*background-color: #ddd;*/
-/*}*/
-h1{
-  text-align: center;
-  font-family: "Noto Sans CJK JP"; font-weight:900;
+.fixed {
+position: fixed;  /* 要素の位置を固定する */
+bottom: 0;  /* 基準の位置を画面の一番下に指定する */
+right: 0; /* 基準の位置を画面の一番右に指定する */
 }
+.left {
+    margin-right: auto;
