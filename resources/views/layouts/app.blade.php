@@ -124,7 +124,7 @@
 
 <!-- フッター -->
     <footer>
-        <div class="footerv2-w3ls">
+        <div class="footerv2-w3ls" style="background-color: #d8e9fa">
             <div class="container-fluid py-5 footer-copy_w3ls">
                 <div class="d-lg-flex justify-content-between">
                     <div class="mt-2 sub-some align-self-lg-center">
@@ -132,12 +132,10 @@
                     </div>
                     <div class="cpy-right align-self-center">
                         <h2 class="agile_btxt">
-                                <span>は</span>じめての
-                                <span>ネ</span>ットショッピング
+                                <span style="color:#f0475f;font-size: 60px">は</span>じめての
+                                <span style="color:#f0475f;font-size: 60px">ネ</span>ットショッピング
                         </h2>
-                        <p>© 2019 Fashion Hub. All rights reserved | Design by
-                            <a href="http://w3layouts.com" class="text-secondary"> W3layouts.</a>
-                        </p>
+                        <p>はじめてのネットショッピング | Created by team34 </p>
                     </div>
                 </div>
             </div>
