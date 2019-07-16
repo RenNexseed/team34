@@ -1,7 +1,7 @@
+
 @extends('layouts.app')
-@section('title')
+@section('style')
 @endsection
-@section('content')
 
 <style>
   body {
@@ -32,8 +32,7 @@ h1{
 
 
 </style>
-@section('category')
-
+@section('content')
 
   <h1 class="text-center">商品一覧画面</h1>
   <div class="container">
@@ -46,6 +45,7 @@ h1{
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
+
       <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
@@ -65,11 +65,10 @@ h1{
             <?php endforeach ?>
           </div>
         </div>
-
+    @extends('layouts.side')
+    @section('sidebar')
 @endsection
-@section('style')
 @endsection
 
 
-@section('footer')
-@endsection
+

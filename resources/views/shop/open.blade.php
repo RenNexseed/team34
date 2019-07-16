@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>商品詳細ページ</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
   @extends('layouts.app')
-  @section('title')
-  @endsection
+  @section('style')
+  
 
   <!-- <form action="/store-orders" method="POST"> -->
 
@@ -86,7 +79,7 @@ hr:before {
 
 </style>
 
-  @section('content')
+@section('content')
   <h1 class="text-center">商品紹介詳細ページ</h1>
   <div class="container">
     <div class="card mb-3" style="width: 100%; border: double 5px #4ec4d3;">
@@ -117,10 +110,11 @@ hr:before {
                 </select>
                 <h3 for="exampleFormControlSelect1" class="ml-3">個</h3>
               </div>
+            </div>
             <hr class="accessory">
               <div class="row">
               <button type="submit" class="btn btn-primary btn-lg ml-3">カートに入れる</button>
-
+            </div>
             </form>
 
             <a href="/home" class="btn btn-success btn-lg ml-5">商品一覧ページに戻る</a>
@@ -129,12 +123,5 @@ hr:before {
         </div>
       </div>
     </div>
- @endsection
 
-
-@section('footer')
 @endsection
-  </div>
-
-  </body>
-  </html>
