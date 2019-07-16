@@ -26,19 +26,17 @@ h1{
 </style>
 
 
-@section('content')
 
-  <h1 class="text-center">商品一覧画面</h1>
+@section('content')
+  <h1 class="text-center">商品一覧</h1>
   <div class="container">
 
-    <form action="{{ 'product/find' }}" method="post">
+    <form action="{{ 'product/find'}}" method="post">
       @csrf
-      <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
+      <input type="text" name="name" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
-
-  @section('category')
 
       <div class="menu-items row text-center">
 
@@ -59,10 +57,7 @@ h1{
           </div>
         </div>
 
-@endsection
-@section('style')
-@endsection
+         </body>
 
-
-@section('footer')
+</html>
 @endsection

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="bg-img_2 moji1">
   <h1 class="mx-auto mt-5">お届け先住所</h1>
-  <form class="form-inline mt-5" action="{{ route('check.confirm')}}" method="post">
+  <form class="form-inline mt-5 moji1" action="{{ route('check.confirm')}}" method="post">
     @csrf
     <div class="form-group row mx-auto container">
       <label for="name" class="form-controll col-sm-5" id="name">お名前</label>
@@ -77,19 +78,34 @@
       </div>
   </div>
   <div class="form-group row container mt-5">
-    <div class="form-check mx-auto">
-      <input class="form-check-input mx-auto form-control{{ $errors->has('check') ? ' is-invalid' : '' }}" required autofocus type="checkbox" id="gridCheck" name="check">
+    <div class="form-check mx-auto cp_ipcheck">
+        <label class="form-check-label" for="gridCheck">
+      <input class="option-input02 checkbox form-control{{ $errors->has('check') ? ' is-invalid' : '' }}" required autofocus type="checkbox" id="gridCheck" name="check">
       @if ($errors->has('check'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('check') }}</strong>
                                     </span>
                                 @endif
-        <label class="form-check-label" for="gridCheck">
           確認ボタン
         </label>
     </div>
-  <button type="submit" class="btn btn-primary" href="{{ route('check.confirm') }}">購入確認ページへ</button>
+    <!-- モーデル -->
+    <div class="modal_wrap">
+<input id="trigger" type="checkbox">
+    <div class="modal_overlay">
+        <label for="trigger" class="modal_trigger"></label>
+        <div class="modal_content">
+            <label for="trigger" class="close_button">✖️</label>
+            <h2 style="text-align: center;">入力お疲れ様です！</h2>
+            <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>実際にこちらのアドレスに届くようになっています。こちらでお届け先などを確認して確定ボタンを押しましょう。</h3>
+            <button type="submit" class="btn btn-primary">購入確認ページへ</button>
+        </div>
+    </div>
+</div>
+
   </div>
+<label for="trigger" class="open_button" href="{{ route('check.confirm') }}">OPEN</label>
 </form>
+</div>
 
 @endsection
