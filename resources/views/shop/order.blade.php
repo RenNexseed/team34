@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-
+<h1 class="text-center">カートの中身</h1>
 <div class="container">
  <h2 class="text-center">このカートの中には合計{{ $orders->count() }}個商品があります。</h2>
  <form action="store-cart" method="post">
