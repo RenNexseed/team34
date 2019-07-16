@@ -11,7 +11,7 @@
   font-size: 30px;
   letter-spacing: 0.05em;
   color:black;
-  /*background-image: url(../storage/images/backimage03.jpg);*/
+  background-image: url(../storage/images/backimage03.jpg);
 }
 
 input{ 
