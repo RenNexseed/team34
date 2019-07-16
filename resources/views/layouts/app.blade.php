@@ -31,6 +31,7 @@
         });
     });
     </script>
+    <script src="{{ asset('js/category.js') }}" defer></script>
     <link href="{{ asset('css/category.css') }}" rel="stylesheet">
 </head>
 <body>

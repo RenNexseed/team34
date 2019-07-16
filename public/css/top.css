@@ -138,7 +138,6 @@ h1{
     box-shadow: 0 1px 3px rgba(0,0,0,0.6);
     border-radius: 16px;
     cursor: pointer;
-    background-color: #FF0;
 }
 .moji1 {
     font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
@@ -146,11 +145,6 @@ h1{
     font-weight: 700;
 }
 
-.bg-img_2{
-  background-image: url(../images/washi1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .cp_ipcheck {
   width: 90%;
   margin: 2em auto;

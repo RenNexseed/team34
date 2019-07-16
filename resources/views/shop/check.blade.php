@@ -77,35 +77,34 @@
         <input type="text" class="form-control" id="inputAddress2" name="build" value="{{ old('build') }}">
       </div>
   </div>
-  <div class="form-group row container mt-5">
-    <div class="form-check mx-auto cp_ipcheck">
-        <label class="form-check-label" for="gridCheck">
-      <input class="option-input02 checkbox form-control{{ $errors->has('check') ? ' is-invalid' : '' }}" required autofocus type="checkbox" id="gridCheck" name="check">
-      @if ($errors->has('check'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('check') }}</strong>
-                                    </span>
-                                @endif
-          確認ボタン
-        </label>
+    <div class="form-group row container mt-5 mx-auto">
+      <div class="form-check cp_ipcheck col-sm-5">
+          <label class="form-check-label" for="gridCheck">
+              <input class="option-input02 checkbox form-control{{ $errors->has('check') ? ' is-invalid' : '' }}" required autofocus type="checkbox" id="gridCheck" name="check">
+              @if ($errors->has('check'))
+              <span class="invalid-feedback" role="alert">
+                  <strong>{{ $errors->first('check') }}</strong>
+                </span>
+              @endif
+                確認ボタン
+          </label>
+      </div>
+      <!-- モーデル -->
+      <div class="modal_wrap">
+        <input id="trigger" type="checkbox">
+            <div class="modal_overlay">
+              <label for="trigger" class="modal_trigger border-success"></label>
+                <div class="modal_content rounded">
+                  <label for="trigger" class="close_button">✖️</label>
+                  <h2 style="text-align: center;" class="border-bottom">入力お疲れ様です！</h2>
+                  <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>実際にこちらのアドレスに届くようになっています。こちらでお届け先などを確認して確定ボタンを押しましょう。</h3>
+                  <button type="submit" class="btn btn-primary mr-5">購入確認ページへ</button>
+                </div>
+            </div>
+          <label for="trigger" class="col-sm-7 open_button rounded btn btn-primary" href="{{ route('check.confirm') }}">OPEN</label>
+      </div>
     </div>
-    <!-- モーデル -->
-    <div class="modal_wrap">
-<input id="trigger" type="checkbox">
-    <div class="modal_overlay">
-        <label for="trigger" class="modal_trigger"></label>
-        <div class="modal_content">
-            <label for="trigger" class="close_button">✖️</label>
-            <h2 style="text-align: center;">入力お疲れ様です！</h2>
-            <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>実際にこちらのアドレスに届くようになっています。こちらでお届け先などを確認して確定ボタンを押しましょう。</h3>
-            <button type="submit" class="btn btn-primary">購入確認ページへ</button>
-        </div>
-    </div>
-</div>
-
-  </div>
-<label for="trigger" class="open_button" href="{{ route('check.confirm') }}">OPEN</label>
-</form>
+  </form>
 </div>
 
 @endsection
