@@ -129,6 +129,8 @@ hr:before {
         </div>
       </div>
     </div>
+    @extends('layouts.side')
+    @section('side')
  @endsection
 
 

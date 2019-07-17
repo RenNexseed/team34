@@ -1,7 +1,7 @@
+
 @extends('layouts.app')
-@section('title')
+@section('style')
 @endsection
-@section('content')
 
 <style>
   body {
@@ -11,10 +11,10 @@
   font-size: 30px;
   letter-spacing: 0.05em;
   color:black;
-  background-image: url(../storage/images/backimage03.jpg);
+  /*background-image: url(../storage/images/backimage03.jpg);*/
 }
 
-input{ 
+input{
   height: 40px;
 }
 
@@ -32,13 +32,13 @@ h1{
 
 
 </style>
-@section('category')
+@section('content')
 
-
-  <h1 class="text-center">商品一覧画面</h1>
+@section('content')
+  <h1 class="text-center">商品一覧</h1>
   <div class="container">
 
-    <form action="{{ 'product/find' }}" method="post">
+    <form action="{{ 'product/find'}}" method="post">
       @csrf
 
       <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
@@ -46,15 +46,16 @@ h1{
       <input type="submit" value="検索" style="width: 10%">
 
     </form>
+
       <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
         <div class="card col-2.99 m-3" style="border: double 5px #4ec4d3;">
-          <img src="storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px">
+          <img src="storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px">  <!-- ディレクトリ構造の違いによりimgのパスがfindと違うので注意 -->
           <div class="card-body">
             <h2 class="menu-item-name" style="background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }">{{ $product->name }}</h2>
-          </div> 
+          </div>
           <ul class="list-group list-group-flush">
                   <li class="list-group-item price" style="font-size: 24px">¥{{ $product->price}}</li>
                   <li class="list-group-item">
@@ -66,10 +67,10 @@ h1{
           </div>
         </div>
 
-@endsection
-@section('style')
-@endsection
+         </body>
 
-
-@section('footer')
+</html>
+    @extends('layouts.side')
+    @section('sidebar')
+@endsection
 @endsection
