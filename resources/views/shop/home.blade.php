@@ -50,7 +50,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade bd-example-modal-xl" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-xl moji1" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
@@ -60,37 +60,38 @@
         </button>
       </div>
       <div class="modal-body">
-        空白に欲しい商品を入力するかカテゴリーの中からどれか選んでみましょう。<br>
-
-        <img src="{{url('../images/kensaku.jpg')}}" class="img2">
+        空欄にシャツと入力するかカテゴリーの中からシャツを選んでみましょう。<br>
+        <img src="{{url('../images/kensaku.jpg')}}"><br>
+        <img src="{{url('../images/category.jpg')}}"><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
       </div>
     </div>
   </div>
 </div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  ページの見方
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+    詳細をチェックボタンのヒント
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade bd-example-modal-xl moji1" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle">「詳細をチェックボタンを押してみよう」</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        「詳細をチェックボタン」を押してみよう
+
+        <img src="{{url('../images/shosai.jpg')}}" class="img3">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
       </div>
     </div>
   </div>
@@ -100,8 +101,8 @@
   <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
-        <div class="card col-2.99 m-3" style="border: double 5px #4ec4d3;">
-          <img src="url{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px">
+        <div class="card col-4" style="border: double 5px #4ec4d3;">
+          <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px">
           <div class="card-body">
             <h2 class="menu-item-name" style="background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }">{{ $product->name }}</h2>
@@ -123,7 +124,7 @@
                     </div>
                 </div>
             </div>
-          <label for="trigger" class="btn btn-primary" href="{{ route('check.confirm') }}">詳細</label>
+          <label for="trigger" class="btn btn-primary" href="{{ route('check.confirm') }}">詳細をチェック</label>
       </div>
                   </li>
                 </ul>

@@ -6,7 +6,32 @@
 
 </head>
 
-<h1 class="text-center">カートの中身</h1>
+<h1 class="text-center mt-5">カートの中身
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    ヒント
+</button>
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-xl moji1" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">カートについて</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        カートとはわかりやすくいうと買い物カゴのことです。<br>普段のお買い物で買い物かごを使うことがあると思います。ネットショッピングでのカートとは買い物かごあと思ってください。<br>このページでは実際にどの商品が入っているかを確認できます。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+</h1>
 <div class="container">
  <h2 class="text-center">このカートの中には合計{{ $orders->count() }}個商品があります。</h2>
  <form action="store-cart" method="post">
@@ -22,10 +47,36 @@
     @foreach($orders as $order)
     <tr style="font-size: 25px">
       <td class="align-middle"> {{ $order->product->name }} </td>
-      <td> <img src="storage/{{ $order->product->picture_path }}" style="width: 150px; height: auto;"> </td>
+      <td> <img src="../{{ $order->product->picture_path }}" style="width: 150px; height: auto;"> </td>
       <td class="align-middle"> {{ $order->product->price }}</td>
       <td class="align-middle"><a href="{{ route('order.decr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-minus btn btn-outline-dark">-</a> {{ $order->amount }} <a href="{{ route('order.incr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-plus btn btn-outline-dark">+</a></td>
-      <td class="align-middle"> <a href="/orders/{{ $order->id }}/delete" class="btn btn-danger my-2">削除 </a></td>
+      <td class="align-middle"> 
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+削除
+</button>
+
+<!-- Modal -->
+<div class="modal fade moji1" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">削除ボタン</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        商品がいらなかった場合にカートから削除するボタンです。
+        <a href="/orders/{{ $order->id }}/delete" class="btn btn-danger my-2">削除をする</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">戻る</button>
+      </div>
+    </div>
+  </div>
+</div>
+</td>
     </tr>
     @endforeach
   </table>

@@ -82,31 +82,7 @@ hr:before {
 @section('content')
   <h1 class="text-center">商品紹介詳細ページ</h1>
   <div class="container">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    ヒント
-</button>
-
-<!-- Modal -->
-<div class="modal fade bd-example-modal-xl" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">商品の詳細ページ</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        このページは先ほど選んだ商品を実際にカートにいれたり料金を確認できたり、個数を変えれるページです。<br>
-        もしわからなければ答えのボタンを押してみましょう。
-        <img src="{{url('../images/kensaku.jpg')}}" class="img2">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+    
     <div class="card mb-3" style="width: 100%; border: double 5px #4ec4d3;">
       <div class="row no-gutters">
         <div class="col-md-5">

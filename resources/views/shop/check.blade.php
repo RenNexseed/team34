@@ -50,7 +50,7 @@
         例）1234567
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
       </div>
     </div>
   </div>
@@ -106,7 +106,7 @@
         例）1−2−34
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
       </div>
     </div>
   </div>
@@ -140,7 +140,7 @@
         例）はじめてビル
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
       </div>
     </div>
   </div>

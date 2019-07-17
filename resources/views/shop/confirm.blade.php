@@ -63,7 +63,7 @@
               </div>
         </div>
     </div>
-    <label for="trigger" class="open_button btn btn-primary mt-5" style="margin: auto;">OPEN</label>
+    <label for="trigger" class="open_button btn btn-primary mt-5" style="margin: auto;">メールを送信する</label>
 </div>
 
 </form>
