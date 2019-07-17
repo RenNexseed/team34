@@ -36,6 +36,7 @@ h1{
 
 @section('content')
   <h1 class="text-center">商品一覧</h1>
+  @include('layouts.side')
   <div class="container">
 
     <form action="{{ 'product/find'}}" method="post">
@@ -44,7 +45,57 @@ h1{
       <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
 
       <input type="submit" value="検索" style="width: 10%">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    検索のヒント
+</button>
 
+<!-- Modal -->
+<div class="modal fade bd-example-modal-xl" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">検索のヒント</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        空白に欲しい商品を入力するかカテゴリーの中からどれか選んでみましょう。<br>
+
+        <img src="{{url('../images/kensaku.jpg')}}" class="img2">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  ページの見方
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     </form>
 
       <div class="menu-items row text-center">
@@ -59,7 +110,22 @@ h1{
           <ul class="list-group list-group-flush">
                   <li class="list-group-item price" style="font-size: 24px">¥{{ $product->price}}</li>
                   <li class="list-group-item">
-                    <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a>
+                    <!-- <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a> -->
+                    <div class="modal_wrap">
+        <input id="trigger" type="checkbox">
+            <div class="modal_overlay">
+              <label for="trigger" class="modal_trigger border-success"></label>
+                <div class="modal_content rounded">
+                  <label for="trigger" class="close_button">✖️</label>
+                  <h2 style="text-align: center;" class="border-bottom">今から商品の詳細ページに移ります</h2>
+                  <h3 style="text-align: center;">下にある「詳細をチェック」というボタンを押すと商品の詳細ページに移ります！<br>実際に詳細位をみてカートにいれてみましょう！</h3>
+                    <div class="text-center">
+                      <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a>
+                    </div>
+                </div>
+            </div>
+          <label for="trigger" class="btn btn-primary" href="{{ route('check.confirm') }}">詳細</label>
+      </div>
                   </li>
                 </ul>
               </div>
@@ -68,9 +134,8 @@ h1{
         </div>
 
          </body>
-
 </html>
-    @extends('layouts.side')
+    
     @section('sidebar')
 @endsection
 @endsection

@@ -3,7 +3,7 @@
 届け先
 @endsection
 @section('content')
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <h1 class="text-center">カートの中身</h1>
@@ -32,10 +32,39 @@
     @endforeach
   </table>
   <div class="row">
-    <input type= submit class="btn btn-info btn-lg mx-auto" value="購入確定ページへ">
+    
+  <div class="modal_wrap mx-auto">
+              <input id="trigger" type="checkbox">
+                <div class="modal_overlay">
+                  <label for="trigger" class="modal_trigger border-success"></label>
+                    <div class="modal_content rounded">
+                      <label for="trigger" class="close_button">✖️</label>
+                      <h2 style="text-align: center;" class="border-bottom">一覧に戻るボタン</h2>
+                      <h3 style="text-align: center;">一覧に戻るボタンです。</h3>
+                        <div class="text-center">
+                        <a href="/home" class="btn btn-success btn-lg ml-5">商品一覧ページに戻る</a>
+                        </div>
+                    </div>
+                </div>
+                  <label for="trigger" class="col-sm-7 btn open_button btn-primary">戻る</label>
+            </div>
+      <div class="modal_wrap mx-auto">
+          <input id="trigger1" type="checkbox">
+              <div class="modal_overlay">
+                <label for="trigger1" class="modal_trigger border-success"></label>
+                  <div class="modal_content rounded">
+                    <label for="trigger1" class="close_button">✖️</label>
+                    <h2 style="text-align: center;" class="border-bottom">購入確認画面に行くボタン。</h2>
+                    <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>ここでは実際に住所を入れてみましょう。こちらはデモなので実際には届かないのでご安心ください。</h3>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary">購入確認ページへ</button>
+                      </div>
+                  </div>
+              </div>
+            <label for="trigger1" class="col-sm-7 open_button btn btn-primary">購入確認ページ</label>
+        </div>
+      </div>
   </form>
-  <a href="/home" class="btn btn-success btn-lg mx-auto">商品一覧ページに戻る</a>
-</div>
 </div>
 
 
