@@ -91,7 +91,6 @@
             <div class="container-fluid footer-copy_w3ls mt-5">
                 <div class="d-lg-flex justify-content-between">
                     <div class="mt-2 sub-some align-self-lg-center">
-                        
                     </div>
                     <div class="cpy-right align-self-center">
                         <p>はじめてのネットショッピング | Created by team34 </p>

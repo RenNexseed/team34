@@ -1,6 +1,6 @@
-  @extends('layouts.app')
-  @section('style')
-  
+  @extends('layouts.app')  <!-- layouts.appを呼び出している -->
+  @section('style')  <!-- styleを呼び出している -->
+  @endsection
 
   <!-- <form action="/store-orders" method="POST"> -->
 
@@ -85,7 +85,7 @@ hr:before {
     <div class="card mb-3" style="width: 100%; border: double 5px #4ec4d3;">
       <div class="row no-gutters">
         <div class="col-md-5">
-          <img src="/storage/{{ $product->picture_path }}" class="card-img m-5" alt="..." style="vertical-align:middle; display:inline-block;">
+          <img src="../{{ $product->picture_path }}" class="card-img m-5" alt="..." style="vertical-align:middle; display:inline-block;">
         </div>
         <div class="col-md-7">
           <div class="card-body m-5" style="vertical-align:middle; display:inline-block;">

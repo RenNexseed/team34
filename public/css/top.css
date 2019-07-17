@@ -3,21 +3,19 @@ display:block;
 }
 
 .bg-img {
-  background-image: url(../images/bg1.jpg); 
+  background-image: url(../images/bg1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
 .container1{
-    
     text-align: middle;
     : 400px;
 }
 .container2{
     vertical-align:middle;
-    margin-top:100px; 
-    
+    margin-top:100px;
 }
 .img2{
     margin-top: 300px;
@@ -58,8 +56,188 @@ display:block;
 #fh5co-hero .btn {
     font-size: 24px;
 }
+/*.flexslider .slides img {
+    height: auto;
+    position: relative;
+  margin: 0;  重なるとはどういう状態か確認できるようにここでは0を指定しています 
+  padding: ; /* 画像を下げた分、それを下回らない適切なmarginまたはpaddingを設定してください */
+  /*background-color: #ddd;*/
+/*}*/
+h1{
+  text-align: center;
+  font-family: "Noto Sans CJK JP"; font-weight:900;
+}
+.modal_wrap input{
+    display: none;
+}
+
+.modal_overlay{
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0s 0.5s;
+    transform: scale(0);
+}
+
+.modal_trigger{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_content{
+    align-self: center;
+    width: 60%;
+    max-width: 800px;
+    padding: 30px 30px 15px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 1.4em;
+    transform: scale(0.5) rotateX(-270deg);
+    transition: 0.5s;
+}
+
+.close_button{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal_wrap input:checked ~ .modal_overlay{
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s;
+}
+
+.modal_wrap input:checked ~ .modal_overlay .modal_content{
+    transform: scale(1) rotateX(0deg);
+}
+
+.open_button{
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.moji1 {
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.cp_ipcheck {
+  width: 90%;
+  text-align: left;
+}
+@keyframes click-wave {
+  0% {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    opacity: 0.35;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-top: -80px;
+    margin-left: -80px;
+    opacity: 0;
+  }
+}
+.cp_ipcheck .option-input02 {
+
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s ease-out 0s;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background: #d7cbcb;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.cp_ipcheck .option-input02:hover {
+  background: #d6a9a9;
+}
+.cp_ipcheck .option-input02:checked {
+  background: #da3c41;
+}
+.cp_ipcheck .option-input02:checked::before {
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: '✔';
+  text-align: center;
+}
+.cp_ipcheck .option-input02:checked::after {
+  position: relative;
+  display: block;
+  content: '';
+  -webkit-animation: click-wave 0.65s;
+          animation: click-wave 0.65s;
+  background: #da3c41;
+}
+.cp_ipcheck .option-input02.radio {
+  border-radius: 50%;
+}
+.cp_ipcheck .option-input02.radio::after {
+  border-radius: 50%;
+}
+.cp_ipcheck label {
+  line-height: 40px;
+  display: block;
+}
+.cp_ipcheck .option-input02:disabled {
+  cursor: not-allowed;
+  background: #b8b7b7;
+}
+.cp_ipcheck .option-input02:disabled::before {
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: '✖︎';
+  text-align: center;
+}
+.midashi{
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+}
 footer{
-  position: absolute; /*　変更*/
+  /*position: absolute; /*　変更*/*/
     bottom: 0;
     width: 100%;
     height: 100px;

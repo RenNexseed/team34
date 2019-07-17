@@ -25,8 +25,6 @@
       <td> <img src="storage/{{ $order->product->picture_path }}" style="width: 150px; height: auto;"> </td>
       <td class="align-middle"> {{ $order->product->price }}</td>
       <td class="align-middle"><a href="{{ route('order.decr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-minus btn btn-outline-dark">-</a> {{ $order->amount }} <a href="{{ route('order.incr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-plus btn btn-outline-dark">+</a></td>
-      
-      
       <td class="align-middle"> <a href="/orders/{{ $order->id }}/delete" class="btn btn-danger my-2">削除 </a></td>
     </tr>
     @endforeach
