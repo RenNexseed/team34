@@ -38,7 +38,7 @@
   @include('layouts.side')
   <div class="container">
 
-  <form action="{{ 'product/find'}}" method="post">  <!-- formのactionの中身がfind.bladeとは違うので注意 -->
+  <form action="{{'product/find'}}" method="post">  <!-- formのactionの中身がfind.bladeとは違うので注意 -->
     @csrf
 
     <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
