@@ -237,7 +237,11 @@ h1{
   padding: 0.2em 0.5em;
 }
 footer{
+<<<<<<< HEAD
   position: auto;
+=======
+  /*position: absolute; /*　変更*/*/
+>>>>>>> master
     bottom: 0;
     width: 100%;
     height: 100px;
