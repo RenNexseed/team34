@@ -35,7 +35,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
-                    <img alt="logo" src="{{url('storage/images/logo4.png')}}" class="mr-5">
+                    <img alt="logo" src="{{url('../images/logo4.png')}}" class="mr-5">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -91,19 +91,13 @@
             <div class="container-fluid footer-copy_w3ls mt-5">
                 <div class="d-lg-flex justify-content-between">
                     <div class="mt-2 sub-some align-self-lg-center">
-                        
                     </div>
                     <div class="cpy-right align-self-center">
-                        <h2 class="agile_btxt">
-                                <span style="color:#f0475f;font-size: 60px">は</span>じめての
-                                <span style="color:#f0475f;font-size: 60px">ネ</span>ットショッピング
-                        </h2>
                         <p>はじめてのネットショッピング | Created by team34 </p>
                     </div>
                 </div>
             </div>
         </div>
-        
     </footer>
 </body>
 </html>
