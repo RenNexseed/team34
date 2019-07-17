@@ -38,7 +38,7 @@
   @include('layouts.side')
   <div class="container">
 
-  <form action="{{ 'product/find'}}" method="post">  <!-- formのactionの中身がfind.bladeとは違うので注意 -->
+  <form action="{{'product/find'}}" method="post">  <!-- formのactionの中身がfind.bladeとは違うので注意 -->
     @csrf
 
     <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
@@ -100,8 +100,8 @@
   <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
-        <div class="card col-2.99 m-3" style="border: double 5px #4ec4d3;">
-          <img src="url{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px">
+        <div class="card col-4" style="border: double 5px #4ec4d3;">
+          <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px">
           <div class="card-body">
             <h2 class="menu-item-name" style="background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }">{{ $product->name }}</h2>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
             </div>
-          <label for="trigger" class="btn btn-primary" href="{{ route('check.confirm') }}">詳細</label>
+          <label for="trigger" class="btn btn-primary" href="{{ route('check.confirm') }}">詳細をチェック</label>
       </div>
                   </li>
                 </ul>

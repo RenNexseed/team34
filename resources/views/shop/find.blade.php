@@ -38,6 +38,7 @@ h1{
 
 @section('content')
   <h1 class="text-center">商品検索画面</h1>
+  @include('layouts.side')
   <div class="container">
 
     <form action="{{'find'}}" method="post">  <!-- formのactionの中身がhome.bladeとは違うので注意 -->
@@ -51,7 +52,7 @@ h1{
       <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
-        <div class="card col-2.99 m-3" style="border: double 5px #4ec4d3;">
+        <div class="card col-4" style="border: double 5px #4ec4d3;">
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">  <!-- ディレクトリ構造の違いによりimgのパスがhomeと違うので注意 -->
           <div class="card-body">
             <h2 class="menu-item-name" style="background: linear-gradient(transparent 70%, #a7d6ff 70%);">{{ $product->name }}</h2>
@@ -69,7 +70,6 @@ h1{
         </div>
 
          </body>
-@extends('layouts.side')  <!-- layouts.sideのページを呼び出す -->
 @section('sidebar')  <!-- その中のsidebarを呼び出す -->
 @endsection  <!-- sidebarのendsection -->
 @endsection  <!-- contentのendsection -->
