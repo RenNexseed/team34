@@ -24,24 +24,25 @@
                 <li>男性服
                     <ul>
 
-                        <li><a href="{{ route('find', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>
-                        <li><a href="{{ route('find', ['category' => 'アウター']) }}">アウター</a></li>
-                        <li><a href="{{ route('find', ['category' => 'シャツ']) }}">シャツ</a></li>
-                        <li><a href="{{ route('find', ['category' => 'ジャケット']) }}">ジャケット</a></li>
-                        <li><a href="{{ route('find', ['category' => 'ズボン']) }}">ズボン</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'アウター']) }}">アウター</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'シャツ']) }}">シャツ</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ジャケット']) }}">ジャケット</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ズボン']) }}">ズボン</a></li>
 
                     </ul>
                 </li>
                 <li>女性服
                     <ul>
-                        <li><a href="{{ route('find', ['category' => 'ladysTシャツ']) }}">Tシャツ</a></li>
-                        <li><a href="{{ route('find', ['category' => 'ワンピース']) }}">ワンピース</a></li>
-                        <li><a href="{{ route('find', ['category' => 'スカート']) }}">スカート</a></li>
-                        <li><a href="{{ route('find', ['category' => 'ニット']) }}">ニット</a></li>
-                        <li><a href="{{ route('find', ['category' => 'ジーンズ']) }}">ジーンズ</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ladysTシャツ']) }}">Tシャツ</a></li>
+                        
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ワンピース']) }}">ワンピース</a></li>
+                        <li><a href="{{  action('CategoriesController@show', ['category' => 'スカート']) }}">スカート</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ニット']) }}">ニット</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ジーンズ']) }}">ジーンズ</a></li>
 
                     </ul>
-                </li>
+                </li> 
             </ul>
     </div>
     </div>
