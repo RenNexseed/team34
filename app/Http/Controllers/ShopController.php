@@ -27,33 +27,33 @@ class ShopController extends Controller
     }
 
 
-    public function store()
-    {
+//     public function store()
+//     {
 
 
-       $data = request()->all();
+//        $data = request()->all();
 
-       $product = new Product();
-
-
-       //$imgpath = $this->saveProfileImage($request->file('picture_path'));
+//        $product = new Product();
 
 
-       $product->name = $data['name'];
-       $product->category = $data['category'];
-       $product->price = $data['price'];
-       $product->description = $data['description'];
+//        //$imgpath = $this->saveProfileImage($request->file('picture_path'));
+// 　
+
+//        $product->name = $data['name'];
+//        $product->category = $data['category'];
+//        $product->price = $data['price'];
+//        $product->description = $data['description'];
 
 
-       $imgPath = $data['picture_path']->store('images', 'public');
+//        $imgPath = $data['picture_path']->store('images', 'public');
 
-       $product->picture_path = $imgPath;
+//        $product->picture_path = $imgPath;
 
 
-       $product->save();
+//        $product->save();
 
-       return redirect('/home');
-    }
+//        return redirect('/home');
+//     }
 
     public function destroy($productId)
     {
