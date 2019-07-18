@@ -100,5 +100,10 @@
             </div>
         </div>
     </footer>
+    <!-- <div class="footer3">
+        <footer style="">
+            <p>&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script> Team34</p>
+        </footer>
+    </div> -->
 </body>
 </html>

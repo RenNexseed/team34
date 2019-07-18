@@ -69,10 +69,7 @@ h1{
         </div>
 
          </body>
+    @extends('layouts.side')
+    @section('sidebar')
 @endsection
-@extends('layouts.side')
-@section('sidebar')
-@endsection
-
-@section('footer')
 @endsection
