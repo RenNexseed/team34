@@ -51,7 +51,7 @@
     
     <tr style="font-size: 25px">
       <td class="align-middle"> {{ $order->product->name }} </td>
-      <td> <img src="../{{ $order->product->picture_path }}" style="width: 150px; height: auto;"> </td>
+      <td class="img_wrap"> <img src="../{{ $order->product->picture_path }}" style="width: 150px; height: auto;"> </td>
       <td class="align-middle"> {{ $order->product->price }}</td>
       <td class="align-middle"><a href="{{ route('order.decr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-minus btn btn-outline-dark">-</a> {{ $order->amount }} <a href="{{ route('order.incr', ['id' => $order->id, 'amount' => $order->amount ]) }}" class="quantity-plus btn btn-outline-dark">+</a></td>
       <td class="align-middle"> 
@@ -83,9 +83,10 @@
 </td>
     </tr>
     @endforeach
-
+    <div class="moji1 nav justify-content-end">
     {{ '合計金額は'
-    .$total}}
+    .$total .'円です'}}
+  </div>
   </table>
   <div class="row">
     
