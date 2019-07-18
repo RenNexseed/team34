@@ -77,6 +77,7 @@
                                     </form>
                                 </div>
                             </li>
+                <a href="{{ url('order') }}" class="btn btn-primary">カート</a>
                         @endguest
                     </ul>
                 </div>
