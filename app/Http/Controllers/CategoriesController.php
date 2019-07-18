@@ -9,10 +9,12 @@ use App\Product;
 
 class CategoriesController extends Controller
 {
-    public function show($id)
+    public function show(Request $request)
     {
-        $products = Product::where('category', $id)->get();
-        return view('shop/find',["products" => $products]);
+        // $products = Product::where('category', $id)->get();
+        // return view('shop/find',["products" => $products]);
+
+      return view('shop.find')->with('products', Product::where('category', $request->category)->get());
     }
 }
 

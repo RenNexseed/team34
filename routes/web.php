@@ -34,7 +34,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('orders/{order}/delete', 'OrderController@destroy');
     Route::post('product/find', 'ShopController@find');//検索機能
 
-    Route::get('find/{category}', 'CategoriesController@show')->name('find'); //カテゴリ機能
+    Route::get('product/{category}', 'CategoriesController@show'); //カテゴリ機能
 
     Route::get('order/decr/{id}/{amount}', [
     'uses' => 'OrderController@decr',

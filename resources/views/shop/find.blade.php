@@ -41,10 +41,12 @@ h1{
   @include('layouts.side')
   <div class="container">
 
-    <form action="{{'find'}}" method="post">  <!-- formのactionの中身がhome.bladeとは違うので注意 -->
+    <form action="{{ 'find' }}" method="post">  <!-- formのactionの中身がhome.bladeとは違うので注意 -->
       @csrf
       <input type="text" name="name" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
+
+    </form>
       <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
     ヒント
@@ -96,7 +98,7 @@ h1{
   </div>
 </div>
       <h4 class="text-left mt-3">合計{{ $products->count() }}件の検索結果が見つかりました</h4>
-    </form>
+    
 
       <div class="menu-items row text-center">
 
