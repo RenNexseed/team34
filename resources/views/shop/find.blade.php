@@ -70,13 +70,7 @@ h1{
         </div>
 
          </body>
-<<<<<<< HEAD
-    @extends('layouts.side')
-    @section('sidebar')
-@endsection
-@endsection
-=======
+
 @section('sidebar')  <!-- その中のsidebarを呼び出す -->
 @endsection  <!-- sidebarのendsection -->
 @endsection  <!-- contentのendsection -->
->>>>>>> 04aeda02fffb68f36010d7a38f9ef1bd02adfb7b
