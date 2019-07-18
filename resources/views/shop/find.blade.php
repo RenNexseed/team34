@@ -133,6 +133,7 @@ h1{
         </div>
 
          </body>
+
 @section('sidebar')  <!-- その中のsidebarを呼び出す -->
 @endsection  <!-- sidebarのendsection -->
 @endsection  <!-- contentのendsection -->
