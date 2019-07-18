@@ -102,8 +102,8 @@
 
       <?php foreach ($products as $product): ?>
         <div class="card col-4" style="border: double 5px #4ec4d3;">
-          <div class="img_wrap"><!-- ホバーを追加 -->
-          <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px">
+          <div class="img_wrap mt-1"><!-- ホバーを追加 -->
+          <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
           <div class="card-body">
             <h2 class="menu-item-name" style="background: linear-gradient(transparent 70%, #a7d6ff 70%);
@@ -126,7 +126,7 @@
                                   </div>
                               </div>
                           </div>
-                        <label for="modal-{{ $product->id }}" class="btn btn-primary">詳細をチェック</label>
+                        <label for="modal-{{ $product->id }}" class="btn btn-primary mb-4">詳細をチェック</label>
                     </div>
                   </li>
                 </ul>
