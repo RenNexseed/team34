@@ -14,21 +14,19 @@ class ShopController extends Controller
     }
 
     public function show($productId){
-
-
       return view('shop.open')->with('product', Product::find($productId));
     }
 
     public function create()
     {
-      return view('shop.createproducts');  
-
-      
+      return view('shop.createproducts');
     }
+
 
 
 //     public function store()
 //     {
+
 
 
 //        $data = request()->all();
@@ -68,6 +66,10 @@ class ShopController extends Controller
     {
       return view('shop.find')->with('products', Product::where('name', 'like' , "%{$request->name}%")->get());
       
+    }
+    public function intro()
+    {
+      return view('shop.intro');
     }
 
 }

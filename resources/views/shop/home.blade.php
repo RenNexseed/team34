@@ -1,4 +1,3 @@
-
 @extends('layouts.app')  <!-- layouts.appを呼び出している -->
 @section('style')  <!-- layout.appのスタイルを呼び出している -->
 @endsection
