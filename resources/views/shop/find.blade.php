@@ -102,7 +102,9 @@ h1{
 
       <?php foreach ($products as $product): ?>
         <div class="card col-4" style="border: double 5px #4ec4d3;">
+          <div class="img_wrap"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">  <!-- ディレクトリ構造の違いによりimgのパスがhomeと違うので注意 -->
+        </div>
           <div class="card-body">
             <h2 class="menu-item-name" style="background: linear-gradient(transparent 70%, #a7d6ff 70%);">{{ $product->name }}</h2>
           </div>

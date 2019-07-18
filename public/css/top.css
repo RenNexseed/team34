@@ -251,3 +251,34 @@ img{
     height: 600px;
     padding-top: 70px;
 }
+.img_wrap{
+  width: 300px;
+  height: 226px;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.img_wrap img{
+  width: 100%;
+  transition-duration: 0.5s;
+}
+.img_wrap:hover img{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.img_wrap1{
+  width: 456.35px;
+  height: 456.35px;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 3rem!important;
+}
+.img_wrap1 img{
+  width: 100%;
+  transition-duration: 0.5s;
+}
+.img_wrap1:hover img{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
