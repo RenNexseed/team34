@@ -83,9 +83,10 @@
 </td>
     </tr>
     @endforeach
-
+    <div class="moji1 nav justify-content-end">
     {{ '合計金額は'
-    .$total}}
+    .$total .'円です'}}
+  </div>
   </table>
   <div class="row">
     
