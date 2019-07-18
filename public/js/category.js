@@ -11,4 +11,9 @@ $(function () {
     $(this).children('ul').slideToggle('fast');
     e.stopPropagation();
   });
+
+  document.getElementById('check22').addEventListener('click', function(e) {
+    e.preventDefault
+    console.log(444);
+  });
 });
