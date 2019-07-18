@@ -19,7 +19,11 @@
       <th>個数</th>
       <th>削除</th>
     </tr>
+    <?php $total = 0; ?>
     @foreach($orders as $order)
+    
+    <?php $total += $order->product->price * $order->amount ?>
+    
     <tr style="font-size: 25px">
       <td class="align-middle"> {{ $order->product->name }} </td>
       <td> <img src="storage/{{ $order->product->picture_path }}" style="width: 150px; height: auto;"> </td>
@@ -30,6 +34,9 @@
       <td class="align-middle"> <a href="/orders/{{ $order->id }}/delete" class="btn btn-danger my-2">削除 </a></td>
     </tr>
     @endforeach
+
+    {{ '合計金額は'
+    .$total}}
   </table>
   <div class="row">
     <input type= submit class="btn btn-info btn-lg mx-auto" value="購入確定ページへ">
