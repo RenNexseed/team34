@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('title')
+@extends('layouts.app')  <!-- layouts.appを呼び出している -->
+@section('style')  <!-- styleを呼び出している -->
 @endsection
 
 <style>
@@ -38,9 +38,10 @@ h1{
 
 @section('content')
   <h1 class="text-center">商品検索画面</h1>
+  @include('layouts.side')
   <div class="container">
 
-    <form action="{{'find'}}" method="post">
+    <form action="{{'find'}}" method="post">  <!-- formのactionの中身がhome.bladeとは違うので注意 -->
       @csrf
       <input type="text" name="name" style="width: 30%">
       <input type="submit" value="検索" style="width: 10%">
@@ -51,8 +52,8 @@ h1{
       <div class="menu-items row text-center">
 
       <?php foreach ($products as $product): ?>
-        <div class="card col-2.99 m-3" style="border: double 5px #4ec4d3;">
-          <img src="../storage/{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">
+        <div class="card col-4" style="border: double 5px #4ec4d3;">
+          <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive" style="height:250px;">  <!-- ディレクトリ構造の違いによりimgのパスがhomeと違うので注意 -->
           <div class="card-body">
             <h2 class="menu-item-name" style="background: linear-gradient(transparent 70%, #a7d6ff 70%);">{{ $product->name }}</h2>
           </div>
@@ -69,7 +70,13 @@ h1{
         </div>
 
          </body>
+<<<<<<< HEAD
     @extends('layouts.side')
     @section('sidebar')
 @endsection
 @endsection
+=======
+@section('sidebar')  <!-- その中のsidebarを呼び出す -->
+@endsection  <!-- sidebarのendsection -->
+@endsection  <!-- contentのendsection -->
+>>>>>>> 04aeda02fffb68f36010d7a38f9ef1bd02adfb7b

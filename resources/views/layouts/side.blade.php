@@ -18,7 +18,7 @@
 <body>
 <div id="outer" class="navbar-fixed-left">
     <div id="left" class="sticky">
-    <div class="left-title">カテゴリー</div>
+    <div class="left-title text-center" style="background-color: #66FFFF;font-size: 22px">カテゴリー</div>
     <div class="link">
     <ul id='menu'>
                 <li>男性服

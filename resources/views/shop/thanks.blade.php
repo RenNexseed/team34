@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div class="panel panel-default">
+  <div class="panel panel-default moji1">
         <div class="panel-heading">
             <h1 class="panel-title">お問い合わせ</h1>
         </div>

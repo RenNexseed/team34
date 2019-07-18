@@ -32,7 +32,7 @@
 <!-- ヘッダー -->
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
                     <img alt="logo" src="{{url('../images/logo4.png')}}" class="mr-5">
@@ -88,10 +88,9 @@
 <!-- フッター -->
     <footer>
         <div class="footerv2-w3ls" style="background-color: #eeeeee">
-            <div class="container-fluid footer-copy_w3ls mt-5">
+            <div class="container-fluid footer-copy_w3ls mt-5 agile_btxt">
                 <div class="d-lg-flex justify-content-between">
                     <div class="mt-2 sub-some align-self-lg-center">
-                        
                     </div>
                     <div class="cpy-right align-self-center">
                         <p>はじめてのネットショッピング | Created by team34 </p>
