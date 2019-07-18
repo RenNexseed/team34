@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!-- Extra large modal -->
+<div class="text-center mt-5 mb-5">
+<button type="button"  class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-xl">ヘルプ</button>
+
+<div class="modal fade bd-example-modal-xl moji1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        はじめての方は右上の新規登録を押してみましょう。<br>すでにしたことがある方は右上のログインを押してみましょう。<br>
+      <img src="{{url('../images/login.jpg')}}" class="img3">
+    </div>
+  </div>
+</div>
+</div>
 <div class="container margin-mxauto">
     <div class="row justify-content-center">
         <div class="col-md-8">

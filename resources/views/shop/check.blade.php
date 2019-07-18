@@ -162,7 +162,7 @@
       <!-- モーデル -->
       <div class="modal_wrap">
         <input id="trigger" type="checkbox">
-            <div class="modal_overlay">
+            <div class="modal_overlay moji1">
               <label for="trigger" class="modal_trigger border-success"></label>
                 <div class="modal_content rounded">
                   <label for="trigger" class="close_button">✖️</label>

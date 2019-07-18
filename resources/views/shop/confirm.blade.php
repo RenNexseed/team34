@@ -49,7 +49,7 @@
 </div>
 <div class="modal_wrap container mx-auto">
   <input id="trigger" type="checkbox">
-    <div class="modal_overlay">
+    <div class="modal_overlay moji1">
       <label for="trigger" class="modal_trigger"></label>
         <div class="modal_content">
           <label for="trigger" class="close_button">✖️</label>
