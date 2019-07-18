@@ -47,6 +47,7 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::post('store-cart', 'CartController@store');
     Route::get('cart', 'CartController@index');
+    Route::get('intro', 'ShopController@intro');
 
 });
 
