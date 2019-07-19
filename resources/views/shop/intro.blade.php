@@ -111,8 +111,13 @@
   </div>
   <aside id="fh5co-hero" class="js-fullheight">
     <div class="flexslider js-fullheight">
+<<<<<<< Updated upstream
       <div class="slides">
         <li style="background-image: url(images2/slide_2.jpg);">
+=======
+      <ul class="slides">
+        <li style="background-image: url(images2/slide_1.jpg);">
+>>>>>>> Stashed changes
           <div class="overlay-gradient"></div>
           <div class="container">
             <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
@@ -124,7 +129,11 @@
             </div>
           </div>
         </li>
+<<<<<<< Updated upstream
 <!--         <li style="background-image: url(images2/slide_2.jpg);">
+=======
+        <li style="background-image: url(images2/slide_2.jpg);">
+>>>>>>> Stashed changes
           <div class="container">
             <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
               <div class="slider-text-inner">
@@ -223,20 +232,56 @@
         </div>
       </div>
       <div class="row">
+<<<<<<< Updated upstream
         <div class="col-md-6 animate-box">
           <div class="item-grid text-center">
             <div class="image" style="background-image: url(images2/image01.jpg)"></div>
+=======
+        <div class="col-md-4 animate-box">
+          <a href="#" class="item-grid text-center">
+            <div class="image" style="background-image: url(images2/image01.jpg)"></div>
+            <div class="v-align">
+              <div class="v-align-middle">
+                <h3 class="title">Geographical App</h3>
+                <h5 class="category">Web Application</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 animate-box">
+          <a href="#" class="item-grid text-center">
+            <div class="image" style="background-image: url(images2/image_2.jpg)"></div>
+>>>>>>> Stashed changes
             <div class="v-align">
               <div class="v-align-middle">
                 <h3 class="title">見やすい構成</h3>
                 <h5 class="category"></h5>
               </div>
             </div>
+<<<<<<< Updated upstream
           </div>
         </div>
         <div class="col-md-6 animate-box">
           <div class="item-grid text-center">
             <div class="image" style="background-image: url(images2/image02.jpg)"></div>
+=======
+          </a>
+        </div>
+        <div class="col-md-4 animate-box">
+          <a href="#" class="item-grid text-center">
+            <div class="image" style="background-image: url(images2/image_3.jpg)"></div>
+            <div class="v-align">
+              <div class="v-align-middle">
+                <h3 class="title">Geographical App</h3>
+                <h5 class="category">Branded</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 animate-box">
+          <a href="#" class="item-grid text-center">
+            <div class="image" style="background-image: url(images2/image_4.jpg)"></div>
+>>>>>>> Stashed changes
             <div class="v-align">
               <div class="v-align-middle">
                 <h3 class="title">動作ごとの説明つき</h3>
@@ -245,9 +290,15 @@
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div class="col-md-6 animate-box">
           <div class="item-grid text-center">
             <div class="image" style="background-image: url(images2/image03.jpg)"></div>
+=======
+        <div class="col-md-4 animate-box">
+          <a href="#" class="item-grid text-center">
+            <div class="image" style="background-image: url(images2/image_5.jpg)"></div>
+>>>>>>> Stashed changes
             <div class="v-align">
               <div class="v-align-middle">
                 <h3 class="title">商品の検索も可能</h3>
@@ -256,9 +307,15 @@
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div class="col-md-6 animate-box">
           <div class="item-grid text-center">
             <div class="image" style="background-image: url(images2/image04.jpg)"></div>
+=======
+        <div class="col-md-4 animate-box">
+          <a href="#" class="item-grid text-center">
+            <div class="image" style="background-image: url(images2/image_6.jpg)"></div>
+>>>>>>> Stashed changes
             <div class="v-align">
               <div class="v-align-middle">
                 <h3 class="title">メールも届く本番仕様</h3>
@@ -285,13 +342,138 @@
 <div class="row">
         <div class="col-md-12 col-offset-0 to-animate">
           <div class="wrap-testimony animate-box">
+<<<<<<< Updated upstream
+=======
+            <div class="owl-carousel-fullwidth">
+              <div class="item">
+                <div class="testimony-slide active text-center">
+                  <figure>
+                    <img src="images2/person1.jpg" alt="user">
+                  </figure>
+                  <blockquote>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                  </blockquote>
+                  <span>Athan Smith, via <a href="#" class="twitter">Twitter</a></span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-slide active text-center">
+                  <figure>
+                    <img src="images2/person2.jpg" alt="user">
+                  </figure>
+                  <blockquote>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                  </blockquote>
+                  <span>Nathalie Kosley, via <a href="#" class="twitter">Twitter</a></span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-slide active text-center">
+                  <figure>
+                    <img src="images2/person3.jpg" alt="user">
+                  </figure>
+                  <blockquote>
+                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                  </blockquote>
+                  <span>Yanna Kuzuki, via <a href="#" class="twitter">Twitter</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fh5co-blog-section" class="fh5co-light-grey-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+          <h2>Recent from Blog</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 animate-box">
+          <a href="#" class="item-grid">
+            <div class="image" style="background-image: url(images2/image_1.jpg)"></div>
+            <div class="v-align">
+              <div class="v-align-middle">
+                <h3 class="title">We Create Mobile App</h3>
+                <h5 class="date"><span>June 23, 2016</span> | <span>4 Comments</span></h5>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <a href="#" class="item-grid">
+            <div class="image" style="background-image: url(images2/image_2.jpg)"></div>
+            <div class="v-align">
+              <div class="v-align-middle">
+                <h3 class="title">Geographical App</h3>
+                <h5 class="date"><span>June 22, 2016</span> | <span>10 Comments</span></h5>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-12 text-center animate-box">
+          <p><a href="#" class="btn btn-primary with-arrow">View More Post <i class="icon-arrow-right"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fh5co-pricing-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+          <h2>Pricing</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="pricing">
+          <div class="col-md-3 animate-box">
+            <div class="price-box">
+              <h2 class="pricing-plan">Starter</h2>
+              <div class="price"><sup class="currency">$</sup>9<small>/month</small></div>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 animate-box">
+            <div class="price-box">
+              <h2 class="pricing-plan">Basic</h2>
+              <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+            </div>
+          </div>
+>>>>>>> Stashed changes
 
           </div>
         </div>
       </div>
     </div>
   </div>
+<<<<<<< Updated upstream
   <footer id="fh5co-footer">
+=======
+
+  <div class="fh5co-cta" style="background-image: url(images2/slide_2.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="col-md-12 text-center animate-box">
+        <h3>We Try To Update The Site Everyday</h3>
+        <p><a href="#" class="btn btn-primary btn-outline with-arrow">Get started now! <i class="icon-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer id="fh5co-footer" role="contentinfo">
+>>>>>>> Stashed changes
   
     <!-- <div class="container"> -->
 <!--       <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
