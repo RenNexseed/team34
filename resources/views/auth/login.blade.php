@@ -4,7 +4,7 @@
 
 <!-- Extra large modal -->
 <div class="text-center mt-5 mb-5">
-<button type="button"  class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-xl">ヘルプ</button>
+<button type="button"  class="btn btn-warning" data-toggle="modal" data-target=".bd-example-modal-xl">ヘルプ</button>
 
 <div class="modal fade bd-example-modal-xl moji1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">

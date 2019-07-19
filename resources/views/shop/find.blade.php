@@ -65,7 +65,7 @@ h1{
       <div class="modal-body">
         「詳細をチェックボタン」を押してみよう
 
-        <img src="{{url('../images/shosai.jpg')}}" class="img3">
+        <img src="{{url('../images/shosai.jpg')}}" >
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>

@@ -97,10 +97,10 @@
 </div>
     </form>
 
-  <div class="menu-items row text-center">
+  <div class="menu-items row text-center" style="background-color: #f1f8ff;">
 
       <?php foreach ($products as $product): ?>
-        <div class="card col-4" style="border: double 5px #4ec4d3;">
+        <div class="card col-4" style="border: double 5px #5c9ee7;">
           <div class="img_wrap mt-1"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
