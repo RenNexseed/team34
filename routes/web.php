@@ -12,13 +12,12 @@
 */
 
 
+Route::get('/', 'ShopController@intro');
 
 Route::group(['middleware' => 'auth'], function() {
   // ログインしていないと表示できないページ↓
-    Route::get('/', 'SelectcourseController@index');
     Route::get('home', 'ShopController@index');
     Route::get('home/{product}', 'ShopController@show');
-    Route::get('shop', 'SelectcourseController@index');
     Route::get('open', 'ShopController@index');
     Route::get('new-products', 'ShopController@create');
     Route::post('store-products', 'ShopController@store');
@@ -47,7 +46,6 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::post('store-cart', 'CartController@store');
     Route::get('cart', 'CartController@index');
-    Route::get('intro', 'ShopController@intro');
 
 });
 
