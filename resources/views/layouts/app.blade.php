@@ -33,7 +33,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('home') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
                     <img alt="logo" src="{{url('../images/logo4.png')}}" class="mr-5">
                 </a>
