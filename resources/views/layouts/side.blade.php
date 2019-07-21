@@ -19,7 +19,7 @@
 
 <div  id="left" class="navbar-fixed-left" style="margin-top: 60px">
     <div id="left" class="sticky">
-                    <ul class="sample1">
+                    <ul class="sample1" style="font-size: 30px">
                 男性服
 
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>

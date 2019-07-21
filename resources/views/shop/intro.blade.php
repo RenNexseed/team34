@@ -86,8 +86,6 @@
 
   </head>
   <body>
-  
-  
   <div id="fh5co-page">
   <header id="fh5co-header" role="banner">
     <div class="container">
@@ -153,10 +151,10 @@
   <div id="fh5co-services-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
-          <h2 id="hoge">はじめてのネットショッピングとは？</h2>
-          <p class="">ネットの利用が初めての方でもネットショッピングの使い方を</p>
-          <p>実演でわかりやすく学べるサイトです。</p>
+        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+          <h1 id="hoge">はじめてのネットショッピングとは？</h1>
+          <h3> ネットの利用が初めての方でもネットショッピングの使い方を</h3>
+          <h3>説明と演習を通してわかりやすく学べるサイトです。</h3>
         </div>
       </div>
       <div class="row">
@@ -221,7 +219,7 @@
     <div id="huga" class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" id="target">
-          <h2>サービス紹介</h2>
+          <h1>サービス紹介</h1>
           <p></p>
         </div>
       </div>
@@ -231,7 +229,7 @@
             <div class="image" style="background-image: url(images2/image01.jpg)"></div>
             <div class="v-align">
               <div class="v-align-middle">
-                <h3 class="title">見やすい構成</h3>
+                <h2 class="title">見やすい構成</h2>
                 <h5 class="category"></h5>
               </div>
             </div>
@@ -242,7 +240,7 @@
             <div class="image" style="background-image: url(images2/image02.jpg)"></div>
             <div class="v-align">
               <div class="v-align-middle">
-                <h3 class="title">動作ごとの説明つき</h3>
+                <h2 class="title">動作ごとの説明つき</h2>
                 <h5 class="category"></h5>
               </div>
             </div>
@@ -253,7 +251,7 @@
             <div class="image" style="background-image: url(images2/image03.jpg)"></div>
             <div class="v-align">
               <div class="v-align-middle">
-                <h3 class="title">商品の検索も可能</h3>
+                <h2 class="title">商品の検索も可能</h2>
                 <h5 class="category"></h5>
               </div>
             </div>
@@ -264,7 +262,7 @@
             <div class="image" style="background-image: url(images2/image04.jpg)"></div>
             <div class="v-align">
               <div class="v-align-middle">
-                <h3 class="title">メールも届く本番仕様</h3>
+                <h2 class="title">メールも届く本番仕様</h2>
                 <h5 class="category"></h5>
               </div>
             </div>
@@ -277,7 +275,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
-          <h2>ネットショッピングを始めよう！</h2>
+          <h1>ネットショッピングを始めよう！</h1>
           <p>インターネットを使うことに抵抗がありませんか？ネットショッピングが使えるようになれば欲しい時に欲しい物を買うことができてとっても便利。</p>
           <p>まずは新規登録から！</p>
                   <div class="col-md-12 text-center animate-box">
@@ -295,7 +293,20 @@
       </div>
     </div>
   </div>
-  <footer id="fh5co-footer">
+   <footer>
+        <div class="footerv2-w3ls" style="background-color: #eeeeee">
+            <div class="container-fluid footer-copy_w3ls mt-5 agile_btxt">
+                <div class="d-lg-flex justify-content-between">
+                    <div class="mt-2 sub-some align-self-lg-center">
+                    </div>
+                    <div class="cpy-right align-self-center">
+                        <p>はじめてのネットショッピング | Created by team34 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!-- <footer id="fh5co-footer"> -->
     <!-- <div class="container"> -->
 <!--       <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
       </div>
@@ -314,9 +325,9 @@
       </div> -->
       
       
-      <div class="cpy-right align-self-center" style="text-align: center;">
+     <!--  <div class="cpy-right align-self-center" style="text-align: center;">
                         <p>はじめてのネットショッピング | Created by team34 </p>
-                    </div>
+                    </div> -->
       
     <!-- </div> -->
   </footer>
