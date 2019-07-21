@@ -43,10 +43,10 @@ display:block;
 }
 .btn-primary {
     color: rgb(255, 255, 255);
-    background: rgb(39, 225, 206);
+    background: rgb(0, 0, 0);
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(39, 225, 206);
+    border-color: rgb(0, 0, 0);
     border-image: initial;
 }
 

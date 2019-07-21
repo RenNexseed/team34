@@ -27,7 +27,7 @@
     @yield('style')
 
 </head>
-<body>
+<body style="background-color: #CCCCCC" class="img123" >
 
 <!-- ヘッダー -->
     <div id="app">

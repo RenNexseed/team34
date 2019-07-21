@@ -100,7 +100,7 @@
             <li><a href="#huga">サービス</a></li>
           </ul>
         </nav>
-      </div>
+      <!-- </div> -->
     </div>
   </header>
   
@@ -276,60 +276,32 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
           <h1>ネットショッピングを始めよう！</h1>
-          <p>インターネットを使うことに抵抗がありませんか？ネットショッピングが使えるようになれば欲しい時に欲しい物を買うことができてとっても便利。</p>
-          <p>まずは新規登録から！</p>
-                  <div class="col-md-12 text-center animate-box">
-          <p><a href="{{ url('home') }}" class="btn btn-primary with-arrow">新規登録 <i class="icon-arrow-right"></i></a></p>
+          <h3>インターネットを使うことに抵抗がありませんか？ネットショッピングが使えるようになれば欲しい時に欲しい物を買うことができてとっても便利。</h3>
+            <h3>練習してネットショッピングを楽しもう。</h3>
+            <h3>まずは新規登録から！</h3>
+            <div class="col-md-12 text-center animate-box">
+              <p><a href="{{ url('register') }}" class="btn btn-primary with-arrow btn-lg" >新規登録 <i class="icon-arrow-right"></i></a></p>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-<div class="row">
+      <div class="row">
         <div class="col-md-12 col-offset-0 to-animate">
           <div class="wrap-testimony animate-box">
-
-
           </div>
         </div>
       </div>
     </div>
   </div>
-   <footer>
-        <div class="footerv2-w3ls" style="background-color: #eeeeee">
-            <div class="container-fluid footer-copy_w3ls mt-5 agile_btxt">
-                <div class="d-lg-flex justify-content-between">
-                    <div class="mt-2 sub-some align-self-lg-center">
-                    </div>
-                    <div class="cpy-right align-self-center">
-                        <p>はじめてのネットショッピング | Created by team34 </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-  <!-- <footer id="fh5co-footer"> -->
-    <!-- <div class="container"> -->
-<!--       <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+  <footer id="fh5co-footer">
+    <div class="container">
+      <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
       </div>
       <div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-
       </div>
-
-      <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0"> -->
-        <!-- <h3>Follow Us</h3>
-        <ul class="fh5co-social">
-          <li><a href="#"><i class="icon-twitter"></i></a></li>
-          <li><a href="#"><i class="icon-facebook"></i></a></li>
-          <li><a href="#"><i class="icon-google-plus"></i></a></li>
-          <li><a href="#"><i class="icon-instagram"></i></a></li>
-        </ul>
-      </div> -->
-      
-      
-     <!--  <div class="cpy-right align-self-center" style="text-align: center;">
-                        <p>はじめてのネットショッピング | Created by team34 </p>
-                    </div> -->
-      
-    <!-- </div> -->
+      <div class="cpy-right align-self-center" style="text-align: center;">
+        <p class="logosenter">はじめてのネットショッピング | Created by team34 </p>
+      </div>
+    </div>
   </footer>
   </div>
   </body>
