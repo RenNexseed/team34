@@ -71,4 +71,9 @@ class ShopController extends Controller
     {
       return view('shop.intro');
     }
+
+    public function explain()
+    {
+      return view('shop.explain');
+    }
 }
