@@ -8,13 +8,13 @@
   <div class="form-group row mx-auto container">
     <label for="name" class="form-controll col-sm-5" id="name">お名前</label>
       <div class="col-sm-7">
-        {{ $hoge['name'] }}
+        {{ Auth::user()->name }}
       </div>
   </div>
 <div class="form-group row mx-auto container mt-5">
   <label for="inputEmail3" class="col-sm-5 col-form-label">メールアドレス</label>
   <div class="col-sm-7">
-    {{ $hoge['mail'] }}
+    {{ Auth::user()->email }}
   </div>
 </div>
   <div class="form-group row mx-auto container mt-5">
@@ -47,7 +47,25 @@
       {{ $hoge['build'] }}
     </div>
 </div>
-<div class="modal_wrap container mx-auto">
+
+<div class="modal_wrap container col-sm-6">
+  <input id="trigger1" type="checkbox">
+    <div class="modal_overlay moji1">
+      <label for="trigger1" class="modal_trigger"></label>
+        <div class="modal_content">
+          <label for="trigger1" class="close_button">✖️</label>
+            <h2>入力画面に戻る</h2>
+              <h3>「戻る」を押すと入力画面に戻ります。</h3>
+              <div class="form-group container row mt-5">
+                <div class="mx-auto">
+                  <button type="button" class="btn btn-primary" onclick=history.back()>戻る</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <label for="trigger1" class="open_button btn btn-primary mt-5" style="margin: auto;">戻る</label>
+</div>
+<div class="modal_wrap container col-sm-6">
   <input id="trigger" type="checkbox">
     <div class="modal_overlay moji1">
       <label for="trigger" class="modal_trigger"></label>
@@ -57,7 +75,6 @@
               <h3>以上でネットショッピングのデモは終了致します。<br>確定を押すとメールが届きます。<br>戻るボタンで前にも戻れます。</h3>
               <div class="form-group container row mt-5">
                 <div class="mx-auto">
-                  <button type="button" class="btn btn-primary" onclick=history.back()>戻る</button>
                   <button type="submit" class="btn btn-primary" href="{{ route('check.thanks') }}">確定する</button>
                 </div>
               </div>
@@ -65,6 +82,5 @@
     </div>
     <label for="trigger" class="open_button btn btn-primary mt-5" style="margin: auto;">メールを送信する</label>
 </div>
-
 </form>
 @endsection

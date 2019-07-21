@@ -8,23 +8,13 @@
     <div class="form-group row mx-auto container">
       <label for="name" class="form-controll col-sm-5" id="name">お名前</label>
         <div class="col-sm-7">
-          <input type="text" class="form-control form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="text4c" name="name" value="{{ Auth::user()->name }}" required autofocus>
-          @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
+         {{ Auth::user()->name }}
         </div>
     </div>
   <div class="form-group row mx-auto container mt-5">
     <label for="inputEmail3" class="col-sm-5 col-form-label">メールアドレス</label>
     <div class="col-sm-7">
-      <input type="email" class="form-control form-control{{ $errors->has('mail') ? ' is-invalid' : '' }}" id="inputEmail3" name="mail" value="{{ Auth::user()->email }}" required autofocus>
-      @if ($errors->has('mail'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('mail') }}</strong>
-                                    </span>
-                                @endif
+      {{ Auth::user()->email }}
     </div>
   </div>
     <div class="form-group row mx-auto container mt-5">
@@ -169,7 +159,7 @@
                   <h2 style="text-align: center;" class="border-bottom">入力お疲れ様です！</h2>
                   <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>こちらはデモなので実際の取引などはないのでご安心ください。</h3>
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary">購入確認ページへ</button>
+                      <button type="submit" class="btn btn-primary" href="{{ route('check.confirm') }}">購入確認ページへ</button>
                     </div>
                 </div>
             </div>

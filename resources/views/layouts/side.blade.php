@@ -19,23 +19,20 @@
 
 <div  id="left" class="navbar-fixed-left" style="margin-top: 60px">
     <div id="left" class="sticky">
+
                     <ul class="sample1">
                 <div class="moji1">男性服</div>
-
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'アウター']) }}">アウター</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'シャツ']) }}">シャツ</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ジャケット']) }}">ジャケット</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ズボン']) }}">ズボン</a></li>
-
-                    
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'mensTシャツ']) }}" style="color: white">Tシャツ</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'アウター']) }}" style="color: white">アウター</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'シャツ']) }}" style="color: white">シャツ</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ジャケット']) }}" style="color: white">ジャケット</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ズボン']) }}" style="color: white">ズボン</a></li>
                 <div class="moji1">女性服</div>
-                
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ladysTシャツ']) }}">Tシャツ</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ワンピース']) }}">ワンピース</a></li>
-                        <li><a href="{{  action('CategoriesController@show', ['category' => 'スカート']) }}">スカート</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ニット']) }}">ニット</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ジーンズ']) }}">ジーンズ</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ladysTシャツ']) }}" style="color: white">Tシャツ</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ワンピース']) }}" style="color: white">ワンピース</a></li>
+                        <li><a href="{{  action('CategoriesController@show', ['category' => 'スカート']) }}" style="color: white">スカート</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ニット']) }}" style="color: white">ニット</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'ジーンズ']) }}" style="color: white">ジーンズ</a></li>
 
                     </ul>
     </div>
