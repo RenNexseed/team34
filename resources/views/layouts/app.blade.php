@@ -60,7 +60,7 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown mr-5">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
@@ -77,6 +77,7 @@
                                     </form>
                                 </div>
                             </li>
+                            <a href="{{ url('order') }}" class="ml-3 mr-5"><img src="{{url('../images/cart.jpg')}}" class="cartlogo"></a>
                         @endguest
                     </ul>
                 </div>

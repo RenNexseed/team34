@@ -65,7 +65,7 @@ h1{
       <div class="modal-body">
         「詳細をチェックボタン」を押してみよう
 
-        <img src="{{url('../images/shosai.jpg')}}" class="img3">
+        <img src="{{url('../images/shosai.jpg')}}" >
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -114,19 +114,19 @@ h1{
                   <li class="list-group-item price" style="font-size: 24px">¥{{ $product->price}}</li>
                   <li class="list-group-item">
                    <div class="modal_wrap">
-        <input id="trigger" type="checkbox">
+        <input id="modal-{{ $product->id }}" type="checkbox">
             <div class="modal_overlay">
-              <label for="trigger" class="modal_trigger border-success"></label>
+              <label for="modal-{{ $product->id }}" class="modal_trigger border-success"></label>
                 <div class="modal_content rounded">
-                  <label for="trigger" class="close_button">✖️</label>
+                  <label for="modal-{{ $product->id }}" class="close_button">✖️</label>
                   <h2 style="text-align: center;" class="border-bottom">今から商品の詳細ページに移ります</h2>
-                  <h3 style="text-align: center;">下にある「詳細をチェック」というボタンを押すと商品の詳細ページに移ります！<br>実際に詳細位をみてカートにいれてみましょう！</h3>
+                  <h3 style="text-align: center;">下にある「詳細をチェック」というボタンを押すと商品の詳細ページに移ります！<br>実際に詳細をみてカートにいれてみましょう！</h3>
                     <div class="text-center">
                       <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a>
                     </div>
                 </div>
             </div>
-          <label for="trigger" class="btn btn-primary" href="{{ route('check.confirm') }}">詳細をチェック</label>
+          <label for="modal-{{ $product->id }}" class="btn btn-primary" href="{{ route('check.confirm') }}">詳細をチェック</label>
       </div>
                   </li>
                 </ul>

@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 @section('title')
 届け先
@@ -103,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                  <label for="trigger" class="col-sm-7 btn open_button btn-primary">戻る</label>
+                  <label for="trigger" class="col-sm-7 btn open_button btn-primary">一覧画面に戻る</label>
             </div>
       <div class="modal_wrap mx-auto">
           <input id="trigger1" type="checkbox">

@@ -63,15 +63,17 @@ class OrderController extends Controller
 
     public function decr($id, $amount)
     {
+        if($amount > 0){
         Order::where('id', $id)
             ->update(['amount' => $amount - 1]);
-
+        }
         //Session::flash('success', 'Order amount updated.');
         return redirect()->back();
     }
 
     public function incr($id, $amount)
     {
+        if($amount < 5)
         Order::where('id', $id)
             ->update(['amount' => $amount + 1]);
 
