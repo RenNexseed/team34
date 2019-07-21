@@ -21,8 +21,10 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <div class="card">
-        <div class="card-header">{{ __('新規会員登録') }}</div>
+      <div class="card" style="border: double 5px #5c9ee7;">
+        <div class="card-header text-center" style="color: #010079;text-shadow: 0 0 5px white;padding: 0.3em 0.5em;background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);">
+          <h2>{{ __('新規会員登録画面') }}</h2>
+        </div>
 
         <div class="card-body">
           <form method="POST" action="{{ route('register') }}">
@@ -30,7 +32,7 @@
 
             <!-- 名前入力 -->
             <div class="form-group row">
-              <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('お名前') }}</label>
+              <h1 for="name" class="col-md-4 col-form-label text-md-right">{{ __('お名前') }}</h1>
 
               <div class="col-md-6">
                 <input id="name" size="25" type="text" class="{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -72,7 +74,7 @@
 
             <!-- 『メールアドレス』入力 -->
             <div class="form-group row">
-              <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
+              <h1 for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</h1>
 
               <div class="col-md-6">
                 <input id="email" type="email" size="25" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -114,10 +116,10 @@
 
             <!-- 『パスワード』入力 -->
             <div class="form-group row">
-              <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('パスワード') }}</label>
+              <h1 for="password" class="col-md-4 col-form-label text-md-right">{{ __('パスワード') }}</h1>
 
               <div class="col-md-6">
-                <input id="password" type="password" size="25" class="{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                <input id="password" type="password" size="25" placeholder="６文字以上、半角入力"class="{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
                 <button type="button" class="btn btn-secondary ml-2" data-toggle="modal" data-target="#exampleModal1">
                   ヘルプ
                 </button>
@@ -156,10 +158,10 @@
 
             <!-- 『パスワード確認』入力 -->
             <div class="form-group row">
-              <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('パスワード確認') }}</label>
+              <h1 for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('パスワード確認') }}</h1>
 
               <div class="col-md-6">
-                <input id="password-confirm" type="password" size="25" name="password_confirmation" required>
+                <input id="password-confirm" type="password" size="25" placeholder="６文字以上、半角入力" name="password_confirmation" required>
                 <button type="button" class="btn btn-secondary ml-2" data-toggle="modal" data-target="#exampleModal2">
                   ヘルプ
                 </button>
@@ -169,7 +171,8 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">先ほど入れたパスワードをもう一度入れましょう</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                        確認用でパスワードをもう一度入れましょう</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -205,7 +208,7 @@
                       <label for="trigger" class="close_button">✖</label>
                       <h2 style="text-align: center;" class="border-bottom">新規登録画面</h2>
                       <h3 style="text-align: center;">
-                      打ち込まれた情報を元に新規登録を行います</h3>
+                      打ち込まれた情報をもとに新規登録を行います</h3>
                       <div class="text-center">
                         <button type="submit" class="btn btn-primary btn-lg">
                           {{ __('新規登録') }}
