@@ -97,10 +97,10 @@
 </div>
     </form>
 
-  <div class="menu-items row text-center">
+  <div class="menu-items row text-center" style="background-color: #f1f8ff;">
 
       <?php foreach ($products as $product): ?>
-        <div class="card col-4" style="border: double 5px #4ec4d3;">
+        <div class="card col-4" style="border: double 5px #5c9ee7;">
           <div class="img_wrap mt-1"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
@@ -119,7 +119,7 @@
                               <div class="modal_content rounded">
                                 <label for="modal-{{ $product->id }}" class="close_button">✖️</label>
                                 <div style="text-align: center;" class="border-bottom">今から商品の詳細ページに移ります</div>
-                                <div style="text-align: center;">下にある「詳細をチェック」というボタンを押すと商品の詳細ページに移ります！<br>実際に詳細位をみてカートにいれてみましょう！</div>
+                                <div style="text-align: center;">下にある「詳細をチェック」というボタンを押すと商品の詳細ページに移ります！<br>実際に詳細をみてカートにいれてみましょう！</div>
                                   <div class="text-center">
                                     <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a>
                                   </div>
