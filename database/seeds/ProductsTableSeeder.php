@@ -196,7 +196,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用Tシャツ',
-            'description' => "女性向けデザインTシャツ。サングラスやバッグとの組み合わせ次第で組み合わせ無限大。",
+            'description' => "デニムと合わせたいシンプルTシャツ",
             'category' => "ladysTシャツ",
             'price' => 1700,
             'picture_path' => "images/products/wtshirt0.jpg",
@@ -214,7 +214,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用Tシャツ',
-            'description' => "女性向けデザインTシャツ。サングラスやバッグとの組み合わせ次第で組み合わせ無限大。",
+            'description' => "個性派のあなたに来こなして欲しい一枚。",
             'category' => "ladysTシャツ",
             'price' => 1700,
             'picture_path' => "images/products/wtshirt02.jpg",
@@ -223,7 +223,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用Tシャツ',
-            'description' => "女性向けデザインTシャツ。サングラスやバッグとの組み合わせ次第で組み合わせ無限大。",
+            'description' => "ビッグシルエットが可愛いTシャツ。パステルカラーがスポーティになりすぎない",
             'category' => "ladysTシャツ",
             'price' => 1700,
             'picture_path' => "images/products/wtshirt03.jpg",
@@ -232,7 +232,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用Tシャツ',
-            'description' => "女性向けデザインTシャツ。サングラスやバッグとの組み合わせ次第で組み合わせ無限大。",
+            'description' => "クロップド丈のロゴTシャツ。チラ見せが可愛い",
             'category' => "ladysTシャツ",
             'price' => 1700,
             'picture_path' => "images/products/wtshirt04.jpg",
@@ -241,7 +241,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用Tシャツ',
-            'description' => "女性向けデザインTシャツ。サングラスやバッグとの組み合わせ次第で組み合わせ無限大。",
+            'description' => "長めの袖と淡いピンクがいい女度を高めてくれる",
             'category' => "ladysTシャツ",
             'price' => 1700,
             'picture_path' => "images/products/wtshirt05.jpg",
@@ -250,7 +250,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用Tシャツ',
-            'description' => "女性向けデザインTシャツ。サングラスやバッグとの組み合わせ次第で組み合わせ無限大。",
+            'description' => "ゆったりシルエットが気張らないTシャツ",
             'category' => "ladysTシャツ",
             'price' => 1700,
             'picture_path' => "images/products/wtshirt06.jpg",
@@ -259,7 +259,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用Tシャツ',
-            'description' => "女性向けデザインTシャツ。サングラスやバッグとの組み合わせ次第で組み合わせ無限大。",
+            'description' => "細めのボーダーが今っぽいクロップド丈Tシャツ",
             'category' => "ladysTシャツ",
             'price' => 1700,
             'picture_path' => "images/products/wtshirt07.jpg",
@@ -268,7 +268,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用ニット',
-            'description' => "女性向けボーダー柄ニット。暖かさとデザイン性を兼ね備えた大人気ニット。",
+            'description' => "上品なシルエットのベージュニット。ウール100%",
             'category' => "ニット",
             'price' => 3500,
             'picture_path' => "images/products/knit01.jpg",
@@ -277,7 +277,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用ニット',
-            'description' => "女性向けボーダー柄ニット。暖かさとデザイン性を兼ね備えた大人気ニット。",
+            'description' => "近年流行のUネックニット。上品にもカジュアルにも合わせやすい。",
             'category' => "ニット",
             'price' => 3500,
             'picture_path' => "images/products/knit02.jpg",
@@ -286,7 +286,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用ニット',
-            'description' => "女性向けボーダー柄ニット。暖かさとデザイン性を兼ね備えた大人気ニット。",
+            'description' => "モコモコ素材のモテニット。今年はサンライトイエローでみんなの視線を浴びちゃおう⭐︎",
             'category' => "ニット",
             'price' => 3500,
             'picture_path' => "images/products/knit03.jpg",
@@ -295,7 +295,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用ニット',
-            'description' => "女性向けボーダー柄ニット。暖かさとデザイン性を兼ね備えた大人気ニット。",
+            'description' => "ワインレッドのタートルネックで大人の女性らしさを。",
             'category' => "ニット",
             'price' => 3500,
             'picture_path' => "images/products/knit04.jpg",
@@ -304,7 +304,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用ニット',
-            'description' => "女性向けボーダー柄ニット。暖かさとデザイン性を兼ね備えた大人気ニット。",
+            'description' => "ブラウンのボーダーがレベちのかわいさ。",
             'category' => "ニット",
             'price' => 3500,
             'picture_path' => "images/products/knit05.jpg",
@@ -313,7 +313,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => '女性用ニット',
-            'description' => "女性向けボーダー柄ニット。暖かさとデザイン性を兼ね備えた大人気ニット。",
+            'description' => "バラの刺繍が目を引く大胆なデザイン",
             'category' => "ニット",
             'price' => 3500,
             'picture_path' => "images/products/knit06.jpg",
@@ -440,7 +440,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'ワンピース',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "パンツだから可愛くなりすぎない♪",
             'category' => "ワンピース",
             'price' => 6100,
             'picture_path' => "images/products/onepiece02.jpg",
@@ -449,7 +449,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'ワンピース',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "シックなブラックで大人っぽく",
             'category' => "ワンピース",
             'price' => 6100,
             'picture_path' => "images/products/onepiece03.jpg",
@@ -458,7 +458,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'ワンピース',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "さりげない花柄が女性らしさを際立たせる一枚",
             'category' => "ワンピース",
             'price' => 6100,
             'picture_path' => "images/products/onepiece04.jpg",
@@ -467,7 +467,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'ワンピース',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "腰元のリボンでスタイルUP！",
             'category' => "ワンピース",
             'price' => 6100,
             'picture_path' => "images/products/onepiece05.jpg",
@@ -476,7 +476,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'ワンピース',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "高見えシルエットで主役級の一枚。",
             'category' => "ワンピース",
             'price' => 6100,
             'picture_path' => "images/products/onepiece06.jpg",
@@ -485,7 +485,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'セーター',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "お父さんの誕生日プレゼントに。",
             'category' => "セーター",
             'price' => 6100,
             'picture_path' => "images/products/sweater01.jpg",
@@ -494,7 +494,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'セーター',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "シンプルなセーター。マストな一枚！",
             'category' => "セーター",
             'price' => 6100,
             'picture_path' => "images/products/sweater02.jpg",
@@ -503,7 +503,7 @@ class ProductsTableSeeder extends Seeder
         ],
         [
             'name'    => 'セーター',
-            'description' => "緑が鮮やかなワンピース。これ一枚で急なお呼ばれにも困らない？",
+            'description' => "落ち着いた色合いで合わせやすいボーダーのニットセーター",
             'category' => "セーター",
             'price' => 6100,
             'picture_path' => "images/products/sweater03.jpg",
