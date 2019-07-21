@@ -20,7 +20,7 @@
 <div  id="left" class="navbar-fixed-left" style="margin-top: 60px">
     <div id="left" class="sticky">
                     <ul class="sample1">
-                男性服
+                <div class="moji1">男性服</div>
 
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'アウター']) }}">アウター</a></li>
@@ -29,7 +29,7 @@
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'ズボン']) }}">ズボン</a></li>
 
                     
-                女性服
+                <div class="moji1">女性服</div>
                 
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'ladysTシャツ']) }}">Tシャツ</a></li>
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'ワンピース']) }}">ワンピース</a></li>

@@ -33,7 +33,7 @@
 </style>
 
 @section('content')
-  <h1 class="text-center">商品一覧</h1>
+  <h1 class="midashi mt-2">商品一覧</h1>
   @include('layouts.side')
   <div class="container">
 
