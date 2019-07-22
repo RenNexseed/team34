@@ -23,7 +23,7 @@
                 男性服
 
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'mensTシャツ']) }}">Tシャツ</a></li>
-                        <li><a href="{{ action('CategoriesController@show', ['category' => 'アウター']) }}">アウター</a></li>
+                        <li><a href="{{ action('CategoriesController@show', ['category' => 'セーター']) }}">セーター</a></li>
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'シャツ']) }}">シャツ</a></li>
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'ジャケット']) }}">ジャケット</a></li>
                         <li><a href="{{ action('CategoriesController@show', ['category' => 'ズボン']) }}">ズボン</a></li>
