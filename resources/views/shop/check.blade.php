@@ -7,25 +7,16 @@
     @csrf
     <div class="form-group row mx-auto container">
       <label for="name" class="form-controll col-sm-5" id="name">お名前</label>
-      <div class="col-sm-7">
-        <input type="text" class="form-control form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="text4c" name="name" value="{{ Auth::user()->name }}" required autofocus>
-        @if ($errors->has('name'))
-        <span class="invalid-feedback" role="alert">
-          <strong>{{ $errors->first('name') }}</strong>
-        </span>
-        @endif
-      </div>
+
+        <div class="col-sm-7">
+         {{ Auth::user()->name }}
+        </div>
     </div>
-    <div class="form-group row mx-auto container mt-5">
-      <label for="inputEmail3" class="col-sm-5 col-form-label">メールアドレス</label>
-      <div class="col-sm-7">
-        <input type="email" class="form-control form-control{{ $errors->has('mail') ? ' is-invalid' : '' }}" id="inputEmail3" name="mail" value="{{ Auth::user()->email }}" required autofocus>
-        @if ($errors->has('mail'))
-        <span class="invalid-feedback" role="alert">
-          <strong>{{ $errors->first('mail') }}</strong>
-        </span>
-        @endif
-      </div>
+  <div class="form-group row mx-auto container mt-5">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">メールアドレス</label>
+    <div class="col-sm-7">
+      {{ Auth::user()->email }}
+
     </div>
     <div class="form-group row mx-auto container mt-5">
       <label for="inputZip" class="col-sm-5 col-form-label">郵便番号</label>
@@ -162,6 +153,7 @@
       <!-- モーダル -->
       <div class="modal_wrap">
         <input id="trigger" type="checkbox">
+<<<<<<< HEAD
         <div class="modal_overlay moji1">
           <label for="trigger" class="modal_trigger border-success"></label>
           <div class="modal_content rounded">
@@ -170,6 +162,18 @@
             <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>こちらはデモなので実際の取引などはないのでご安心ください。</h3>
             <div class="text-center">
               <button type="submit" class="btn btn-primary">購入確認ページへ</button>
+=======
+            <div class="modal_overlay moji1">
+              <label for="trigger" class="modal_trigger border-success"></label>
+                <div class="modal_content rounded">
+                  <label for="trigger" class="close_button">✖️</label>
+                  <h2 style="text-align: center;" class="border-bottom">入力お疲れ様です！</h2>
+                  <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>こちらはデモなので実際の取引などはないのでご安心ください。</h3>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary" href="{{ route('check.confirm') }}">購入確認ページへ</button>
+                    </div>
+                </div>
+>>>>>>> 8b874bd5933faaa4b45b0f823361a218b83514b7
             </div>
           </div>
         </div>
