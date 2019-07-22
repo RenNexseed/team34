@@ -31,7 +31,7 @@
 
 <!-- ヘッダー -->
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: #000000;">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:#9966CC">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('home') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->

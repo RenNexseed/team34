@@ -4,36 +4,20 @@
 
 <style>
   body {
-    font-family: Lato, 'Hiragino Kaku Gothic Pro', sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
     font-size: 30px;
     letter-spacing: 0.05em;
-    color:black;
-    /*background-image: url(../storage/images/backimage03.jpg);*/
+    background-color: #CCCCCC;
   }
 
   input{
     height: 40px;
   }
 
-  h1{
-    font-size: 80px;
-    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-    color: #6cb4e4;
-    text-align: center;
-    padding: 0.25em;
-    border-top: solid 2px #6cb4e4;
-    border-bottom: solid 2px #6cb4e4;
-    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-  }
-
-
 </style>
 <body>
 @section('content')
-<h1 class="midashi mt-2">商品一覧</h1>
+<h1 class="midashi mt-2 mb-5">商品一覧</h1>
 @include('layouts.side')
 <div class="container">
 
@@ -70,7 +54,7 @@
       </div>
     </div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+    <button type="button" class="btn btn-prima" data-toggle="modal" data-target="#exampleModalCenter1">
       詳細をチェックボタンのヒント
     </button>
 
@@ -97,10 +81,10 @@
     </div>
   </form>
 
-  <div class="menu-items row text-center" style="background-color: #f1f8ff;">
+  <div class="menu-items row text-center" >
 
     <?php foreach ($products as $product): ?>
-      <div class="card col-4" style="border: double 5px black;">
+    <div class="card col-4" style="border: double 5px #0000CD;">
         <div class="img_wrap mt-1"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
@@ -130,11 +114,9 @@
       </ul>
     </div>
   <?php endforeach ?>
+  </div>
 </div>
-</div>
-
 </body>
-</html>
 @section('sidebar')  <!-- その中のsidebarを呼び出す -->
 @endsection  <!-- sidebarのendsection -->
 @endsection  <!-- contentのendsection -->
