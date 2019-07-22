@@ -84,7 +84,7 @@
             </div>
         </nav>
     </div>
-            @yield('content')
+            @yield('contentAllpage')
 
 <!-- フッター -->
     <footer>
