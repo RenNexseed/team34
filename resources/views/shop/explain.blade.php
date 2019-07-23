@@ -20,21 +20,8 @@
     </nav>
 
     <ul class="thumbnails"></ul>
-<<<<<<< HEAD
-                <p><a href="{{ url('home') }}" class="btn btn-primary btn-lg">はじめる</a></p>
-
-  </div>
 
   <script src="{{ asset('js/explain.js') }}" defer></script>
-@endsection
-=======
-
     <p><a href="{{ url('home') }}" class="btn btn-primary btn-lg">実際に始めてみる</a></p>
   </div>
-
-
-
-  <script src="js/explain.js"></script>
-</body>
-</html>
->>>>>>> master
+@endsection
