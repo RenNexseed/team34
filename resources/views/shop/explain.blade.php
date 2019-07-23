@@ -22,7 +22,11 @@
     </nav>
 
     <ul class="thumbnails"></ul>
+
+    <p><a href="{{ url('home') }}" class="btn btn-primary btn-lg">実際に始めてみる</a></p>
   </div>
+
+
 
   <script src="js/explain.js"></script>
 </body>

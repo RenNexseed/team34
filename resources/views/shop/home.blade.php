@@ -88,6 +88,7 @@
         <div class="img_wrap mt-1"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
+
         <div class="card-body">
           <h2 class="menu-item-name moji2">{{ $product->name }}</h2>
       </div> 
