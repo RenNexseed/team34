@@ -26,6 +26,7 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <LINK rel="shortcut icon" href="{{asset('images/favicon.png')}}">
 
     @yield('style')
 

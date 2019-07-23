@@ -120,7 +120,7 @@ h1{
                 <div class="modal_content rounded">
                   <label for="modal-{{ $product->id }}" class="close_button">✖️</label>
                   <h2 style="text-align: center;" class="border-bottom">今から商品の詳細ページに移ります</h2>
-                  <h3 style="text-align: center;">下にある「詳細をチェック」というボタンを押すと商品の詳細ページに移ります！<br>実際に詳細をみてカートにいれてみましょう！</h3>
+                  <h3 style="text-align: center;">下にある「詳細をチェック」というボタンを押すと商品の詳細ページに移ります！<br>実際に詳細をみて商品を確認してみましょう！</h3>
                     <div class="text-center">
                       <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a>
                     </div>

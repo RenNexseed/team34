@@ -1,6 +1,8 @@
 $(function() {
   $('#check-info').click(function() {
     // check
+
+    $res = 
     if( $res !== "" ){
       console.log();
 
