@@ -291,3 +291,27 @@ img{
   height: 46px;
 
 }
+.box11{
+    padding: 0.5em 1em;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}
+.box2 {
+    padding: 0.5em 1em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width: auto;
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}

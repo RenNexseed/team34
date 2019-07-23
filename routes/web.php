@@ -47,9 +47,9 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('store-cart', 'CartController@store');
     Route::get('cart', 'CartController@index');
 
-    Route::get('explain', 'ShopController@explain');
 
 });
+    Route::get('explain', 'ShopController@explain');
 
 
 

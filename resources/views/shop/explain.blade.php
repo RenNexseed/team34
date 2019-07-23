@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>Slideshow</title>
-  <link rel="stylesheet" href="css/explain.css">
-</head>
-<body>
-  <div class="container">
+@extends('layouts.app')  <!-- layouts.appを呼び出している -->
+@section('style')  <!-- layout.appのスタイルを呼び出している -->
+@endsection
+
+  <link href="{{ asset('css/explain.css') }}" rel="stylesheet">
+@section('content')
+  <div class="container" style="margin-top: 70px">
     <main>
       <img>
     </main>
@@ -22,8 +20,9 @@
     </nav>
 
     <ul class="thumbnails"></ul>
+                <p><a href="{{ url('home') }}" class="btn btn-primary btn-lg">はじめる</a></p>
+
   </div>
 
-  <script src="js/explain.js"></script>
-</body>
-</html>
+  <script src="{{ asset('js/explain.js') }}" defer></script>
+@endsection

@@ -163,7 +163,8 @@
                     </div>
                 </div>
             </div>
-          <label for="trigger" class="open_button btn btn-primary">購入確定ページへ</label>
+          <label id="check-info" for="trigger" class="open_button btn btn-primary">購入確定ページへ</label>
+          <!-- <label id="test" for="trigger" class="open_button btn btn-primary" style="display: none;" >購入確定ページへ</label> -->
       </div>
     </div>
   </form>

@@ -118,6 +118,7 @@
                 <h2>はじめての</h2>
                 <h2>ネットショッピング</h2>
                 <p><a href="{{ url('home') }}" class="btn btn-primary btn-lg">はじめる</a></p>
+                <p><a href="{{ url('explain') }}" class="btn btn-primary btn-lg">説明ページに行く</a></p>
               </div>
             </div>
           </div>
