@@ -153,7 +153,7 @@
       <!-- モーダル -->
       <div class="modal_wrap">
         <input id="trigger" type="checkbox">
-<<<<<<< HEAD
+
         <div class="modal_overlay moji1">
           <label for="trigger" class="modal_trigger border-success"></label>
           <div class="modal_content rounded">
@@ -162,18 +162,6 @@
             <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>こちらはデモなので実際の取引などはないのでご安心ください。</h3>
             <div class="text-center">
               <button type="submit" class="btn btn-primary">購入確認ページへ</button>
-=======
-            <div class="modal_overlay moji1">
-              <label for="trigger" class="modal_trigger border-success"></label>
-                <div class="modal_content rounded">
-                  <label for="trigger" class="close_button">✖️</label>
-                  <h2 style="text-align: center;" class="border-bottom">入力お疲れ様です！</h2>
-                  <h3 style="text-align: center;">続いてはお届け先の確認ページに行きます。<br>こちらはデモなので実際の取引などはないのでご安心ください。</h3>
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-primary" href="{{ route('check.confirm') }}">購入確認ページへ</button>
-                    </div>
-                </div>
->>>>>>> 8b874bd5933faaa4b45b0f823361a218b83514b7
             </div>
           </div>
         </div>
