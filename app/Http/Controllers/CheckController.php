@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 // use App\Http\Requests\Create;
 use Mail;
 // use App\Mail\PostSent;
-// use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Auth;
 // use App\http\Requests\CreateForm;
 
 
@@ -14,14 +14,13 @@ class CheckController extends Controller
 {
     public function index()
     {
-
+        
         return view('shop.check');
     }
     public function confirm(Request $request)
     {
+
         $request->validate([
-       'name' => 'required',  // 必須・文字列・２５５文字以内
-        'mail' => 'required',               // 必須
         'zip01' => 'required|integer',          // 必須・整数
         'pref01' => 'required',          // 必須・整数
         'addr01' => 'required',          // 必須・整数

@@ -118,6 +118,8 @@
                 <h2>はじめての</h2>
                 <h2>ネットショッピング</h2>
                 <p><a href="{{ url('home') }}" class="btn btn-primary btn-lg">はじめる</a></p>
+                <p><a href="{{ url('explain') }}" class="btn btn-primary btn-lg">説明を読んでからはじめる</a></p>
+
               </div>
             </div>
           </div>
@@ -276,6 +278,7 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
           <h1>ネットショッピングを始めよう！</h1>
+
           <h3>インターネットを使うことに抵抗がありませんか？ネットショッピングが使えるようになれば欲しい時に欲しい物を買うことができてとっても便利。</h3>
             <h3>練習してネットショッピングを楽しもう。</h3>
             <h3>まずは新規登録から！</h3>
@@ -283,6 +286,7 @@
               <p><a href="{{ url('register') }}" class="btn btn-primary with-arrow btn-lg" >新規登録 <i class="icon-arrow-right"></i></a></p>
             </div>
           </div>
+
         </div>
       <div class="row">
         <div class="col-md-12 col-offset-0 to-animate">
@@ -292,16 +296,12 @@
       </div>
     </div>
   </div>
-  <footer id="fh5co-footer">
-    <div class="container">
-      <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-      </div>
-      <div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-      </div>
+
       <div class="cpy-right align-self-center" style="text-align: center;">
         <p class="logosenter">はじめてのネットショッピング | Created by team34 </p>
       </div>
     </div>
+
   </footer>
   </div>
   </body>

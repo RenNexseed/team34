@@ -23,19 +23,20 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
+    <LINK rel="shortcut icon" href="{{asset('images/favicon.png')}}">
 
     @yield('style')
 
 </head>
-<body style="background-color: #CCCCCC" class="img123" >
+<body>
 
 <!-- ヘッダー -->
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:#9966CC">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('home') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
-                    <img alt="logo" src="{{url('../images/logo4.png')}}" class="mr-5">
+                    <div class="moji2 mr-5" style="color: white;">はじめてのネットショッピング</div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -61,7 +62,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown mr-5">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: white;">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -77,13 +78,14 @@
                                     </form>
                                 </div>
                             </li>
-                            <a href="{{ url('order') }}" class="ml-3 mr-5"><img src="{{url('../images/cart.jpg')}}" class="cartlogo"></a>
+                            <a href="{{ url('order') }}" class="ml-3 mr-5"><img src="{{url('../images/cart.png')}}" class="cartlogo"></a>
                         @endguest
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+
             @yield('content')
 
 <!-- フッター -->

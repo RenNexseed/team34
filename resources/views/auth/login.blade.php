@@ -4,6 +4,7 @@
 
 <!-- Extra large modal -->
 <div class="text-center mt-5 mb-5">
+
   <button type="button"  class="btn btn-info moji1" data-toggle="modal" data-target=".bd-example-modal-xl">ヘルプ</button>
 
   <!-- 『ヘルプ』モーダル -->
@@ -20,6 +21,7 @@
 
 </div>
 <div class="container margin-mxauto">
+
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="card" style="border: double 5px #5c9ee7;">
