@@ -124,6 +124,16 @@
                   ヘルプ
                 </button>
 
+
+                @if ($errors->has('password'))
+                <span class="invalid-feedback" role="alert">
+                  <strong>{{ $errors->first('password') }}</strong>
+                </span>
+                @endif
+              </div>
+            </div>
+            <!-- 『パスワード』入力終わり -->
+
                 <!-- 『パスワード』モーダル -->
                 <div class="modal fade moji1" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -145,16 +155,6 @@
                   </div>
                 </div>
                 <!-- 『パスワード』モーダル終わり -->
-
-                @if ($errors->has('password'))
-                <span class="invalid-feedback" role="alert">
-                  <strong>{{ $errors->first('password') }}</strong>
-                </span>
-                @endif
-              </div>
-            </div>
-            <!-- 『パスワード』入力終わり -->
-
 
             <!-- 『パスワード確認』入力 -->
             <div class="form-group row">
