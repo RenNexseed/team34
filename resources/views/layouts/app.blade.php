@@ -72,10 +72,15 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('ログアウト') }}
                                     </a>
+                                    <!-- <a class="dropdown-item" href="{{ url('login.edit') }}"
+                                       >
+                                        {{ __('ユーザー編集') }}
+                                    </a> -->
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+
                                 </div>
                             </li>
                             <a href="{{ url('order') }}" class="ml-3 mr-5"><img src="{{url('../images/cart.png')}}" class="cartlogo"></a>

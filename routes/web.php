@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/', 'ShopController@intro');
+Route::get('/', 'ShopController@intro'); 
 
 Route::group(['middleware' => 'auth'], function() {
   // ログインしていないと表示できないページ↓
@@ -48,6 +48,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('cart', 'CartController@index');
 
     Route::get('explain', 'ShopController@explain');
+    // Route::get('login.edit', 'Auth\LoginController@edit');
 
 });
 
