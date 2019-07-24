@@ -15,6 +15,7 @@
     <script src="{{ asset('js/ajaxzip3.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/modal.js') }}" defer></script>
+    <script src="{{ asset('js/policy.js') }}" defer></script>
     </script>
 
     <!-- Fonts -->
@@ -26,6 +27,7 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="{{ asset('css/policy.css') }}" rel="stylesheet">
     <LINK rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     <style>
         body{

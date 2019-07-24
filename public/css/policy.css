@@ -1,0 +1,129 @@
+.card{
+  border: double 5px #005500;
+}
+.card-header{
+  background-color: #005500;
+  color: white;
+}
+
+.policy{
+  display: inline-block;
+  text-align: center;
+}
+.grad-wrap{
+  position: relative;
+}
+.grad-wrap .grad-wrap{
+  margin-top: 40px;
+}
+.grad-trigger {
+      z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 148px;
+    margin: auto;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #666666;
+    background-color: white;
+    border: solid 2px #666666;
+    border-radius: 3px;
+    transition: .4s;
+    bottom: -2em;
+    text-align: center;
+    /* cursor: pointer; */
+    /* transition: .2s ease; */
+    /*box-shadow: 0 0 3px rgba(0,0,0,.3);*/
+}
+.grad-trigger:hover {
+  background: #666666;
+  color: white;
+}
+.grad-trigger::after {
+  content: "続きを読む" /*クリック前のボタンのラベル*/
+}
+.grad-trigger .fa {
+  margin-right: .5em;
+}
+.grad-item {
+  position: relative;
+  overflow: hidden;
+}
+.grad-item.is-hide {
+  height: 80px; /*隠した後の高さ*/
+}
+.grad-item::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 40px; /*グラデーションで隠す高さ*/
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+}
+.grad-trigger.is-show {
+  bottom: -2em;
+}
+.grad-trigger.is-show::after {
+  content: "閉じる" /*クリック後にボタンのラベルを変える*/
+}
+.grad-trigger.is-show + .grad-item::before {
+  display: none;
+}
+.comfirm{
+  margin-top: 40px;
+}
+.position{
+  text-align: center;
+}
+
+.col-md-1{
+  margin-top: 10px;
+}
+.frame {
+ width: 80%;
+ margin: 30px auto 20px;
+ padding: 30px 20px 0;
+ border: 3px solid #aaa;
+ position: relative;
+ border-radius: 3px;
+ background-color: #fff;
+}
+.frame-title {
+ position: absolute;
+ top: -13px;
+ left: 20px;
+ padding: 0 5px;
+ background-color: #fff;
+}
+.frame-title .fa {
+ margin-right: 5px;
+}
+.caution {
+ background-color: #005500;
+ border: 2px solid #005500;
+ color: #fff;
+ border-radius: 3px;
+}
+.frame-red {
+ border-color: #005500;
+}
+h6{
+  font-weight: bold;
+}
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+input[type=checkbox] {
+  -ms-transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+}
+.cp_ipcheck{
+  /*margin-left: 100px;*/
+  text-align: center;
+}
