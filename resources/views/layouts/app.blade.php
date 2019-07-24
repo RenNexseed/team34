@@ -13,6 +13,7 @@
     <script src="{{ asset('js/ajaxzip3.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/policy.js') }}" defer></script>
     </script>
 
     <!-- Fonts -->
@@ -23,6 +24,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/policy.css') }}" rel="stylesheet">
     <LINK rel="shortcut icon" href="{{asset('images/favicon.png')}}">
 
     @yield('style')
