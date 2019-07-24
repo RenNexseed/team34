@@ -13,6 +13,15 @@
   input{
     height: 40px;
   }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    width: 1383px;
+}
 
 
 </style>
@@ -22,14 +31,14 @@
 @include('layouts.side')
 <div class="container">
 
-  <form action="{{'product/find'}}" method="post">  <!-- formのactionの中身がfind.bladeとは違うので注意 -->
+  <form action="{{'product/find'}}" method="post" style="margin-left: 200px;">  <!-- formのactionの中身がfind.bladeとは違うので注意 -->
     @csrf
 
     <input type="text" name="name" placeholder="商品名で検索してください" style="width: 30%" >
 
     <input type="submit" value="検索" style="width: 10%">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    <button type="button" class="btn btn-hint ml-2" data-toggle="modal" data-target="#exampleModalCenter">
       検索のヒント
     </button>
 
@@ -55,7 +64,7 @@
       </div>
     </div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+    <button type="button" class="btn btn-hint ml-2" data-toggle="modal" data-target="#exampleModalCenter1">
       詳細をチェックボタンのヒント
     </button>
 
@@ -85,17 +94,17 @@
   <div class="menu-items row text-center" >
 
     <?php foreach ($products as $product): ?>
-    <div class="card col-3.9 m-1" style="border: double 10px black;">
+    <div class="card col-3.9 m-1">
         <div class="img_wrap mt-1"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
 
         <div class="card-body">
           <h2 class="menu-item-name moji2">{{ $product->name }}</h2>
-      </div> 
+        </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item price moji2" style="font-size: 24px">¥{{ $product->price}}</li>
-        <li class="list-group-item">
+        <li class="list-group-item price moji2" style="font-size: 24px;background-color: white;">¥{{ $product->price}}</li>
+        <li class="list-group-item" style="background-color: white;">
           <!-- <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a> -->
           <div class="modal_wrap">
             <input id="modal-{{ $product->id }}" type="checkbox">
@@ -110,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <label for="modal-{{ $product->id }}" class="btn btn-primary mb-4 moji2">詳細をチェック</label>
+            <label for="modal-{{ $product->id }}" class="btn btn-primary mb- moji2">詳細をチェック</label>
           </div>
         </li>
       </ul>

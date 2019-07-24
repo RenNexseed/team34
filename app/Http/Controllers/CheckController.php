@@ -9,14 +9,15 @@ use Mail;
 use Illuminate\Support\Facades\Auth;
 // use App\http\Requests\CreateForm;
 
-
+// 購入確認ページのコントローラー（check,confirm,thanks）
 class CheckController extends Controller
 {
+    // 入力フォームの呼び出し
     public function index()
     {
-        
         return view('shop.check');
     }
+    // 確認ページの呼び出し
     public function confirm(Request $request)
     {
 
@@ -32,6 +33,7 @@ class CheckController extends Controller
 
         return view('shop.confirm', ['hoge' => $data]);
     }
+    // thanksページの表示、メールの送信
     public function thanks(Request $request)
     {
         $data = $request->all();
