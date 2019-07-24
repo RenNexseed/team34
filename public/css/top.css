@@ -42,12 +42,12 @@ display:block;
     transition: all 0.5s ease 0s;
 }
 .btn-primary {
-    color: rgb(255, 255, 255);
+    color: black;
 
-    background: rgb(0, 0, 0);
+    background: #339966;
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(0, 0, 0);
+    border-color: #339966;
     border-image: initial;
 }
 
@@ -290,4 +290,27 @@ img{
   width: 46px;
   height: 46px;
 
+}
+.box11{
+    padding: 0.5em 1em;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}
+.box2 {
+    padding: 0.5em 1em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    border: solid 3px;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width: auto;
+}
+.box2 a {
+    margin: 0; 
+    padding: 0;
 }

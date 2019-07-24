@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,11 @@
     <title>{{ config('app.name', 'はじめてのネットショッピング') }}@yield('title')</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/ajaxzip3.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/jquery.min.js') }}" defer></script> -->
     <script src="{{ asset('js/bootstrap.js') }}" defer></script>
+    <script src="{{ asset('js/ajaxzip3.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/modal.js') }}" defer></script>
     <script src="{{ asset('js/policy.js') }}" defer></script>
     </script>
 
@@ -24,8 +26,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="{{ asset('css/policy.css') }}" rel="stylesheet">
     <LINK rel="shortcut icon" href="{{asset('images/favicon.png')}}">
+    <style>
+        body{
+            background-color: #EEEEEE!important;
+        }
+    </style>
 
     @yield('style')
 
@@ -34,11 +42,11 @@
 
 <!-- ヘッダー -->
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:#9966CC">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: #339966;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('home') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
-                    <div class="moji2 mr-5" style="color: white;">はじめてのネットショッピング</div>
+                    <div class="moji2 mr-5 mt-2" style="color: white;"><p>はじめてのネットショッピング</p></div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -54,17 +62,17 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
+                            <li class="nav-item container">
+                                <a class="nav-link" href="{{ route('login') }}" style="color: white;">{{ __('ログイン') }}</a>
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('新規登録') }}</a>
+                                <li class="nav-item container ml-4">
+                                    <a class="nav-link" href="{{ route('register') }}" style="color: white;">{{ __('新規登録') }}</a>
                                 </li>
                             @endif
                         @else
                             <li class="nav-item dropdown mr-5">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: white;">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle box2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: white;">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -92,7 +100,7 @@
 
 <!-- フッター -->
     <footer>
-        <div class="footerv2-w3ls" style="background-color: #eeeeee">
+        <div class="footerv2-w3ls">
             <div class="container-fluid footer-copy_w3ls mt-5 agile_btxt">
                 <div class="d-lg-flex justify-content-between">
                     <div class="mt-2 sub-some align-self-lg-center">
@@ -104,10 +112,5 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="footer3">
-        <footer style="">
-            <p>&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script> Team34</p>
-        </footer>
-    </div> -->
 </body>
 </html>

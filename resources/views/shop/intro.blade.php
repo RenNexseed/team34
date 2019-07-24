@@ -119,7 +119,6 @@
                 <h2>ネットショッピング</h2>
                 <p><a href="{{ url('home') }}" class="btn btn-primary btn-lg">はじめる</a></p>
                 <p><a href="{{ url('explain') }}" class="btn btn-primary btn-lg">説明を読んでからはじめる</a></p>
-
               </div>
             </div>
           </div>
