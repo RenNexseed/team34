@@ -14,10 +14,11 @@
     height: 40px;
   }
 
+
 </style>
 <body>
 @section('content')
-<h1 class="midashi mt-2 mb-5">商品一覧</h1>
+<h1 class="mb-5 mx-auto mt-5" style="color: black;">商品一覧</h1>
 @include('layouts.side')
 <div class="container">
 
@@ -54,7 +55,7 @@
       </div>
     </div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-prima" data-toggle="modal" data-target="#exampleModalCenter1">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
       詳細をチェックボタンのヒント
     </button>
 
@@ -71,7 +72,7 @@
           <div class="modal-body">
             「詳細をチェックボタン」を押してみよう
 
-            <img src="{{url('../images/shosai.jpg')}}" class="img3">
+            <img src="{{url('../images/shosai.jpg')}}">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -84,7 +85,7 @@
   <div class="menu-items row text-center" >
 
     <?php foreach ($products as $product): ?>
-    <div class="card col-4" style="border: double 5px #0000CD;">
+    <div class="card col-3.9 m-1" style="border: double 10px black;">
         <div class="img_wrap mt-1"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
@@ -93,7 +94,7 @@
           <h2 class="menu-item-name moji2">{{ $product->name }}</h2>
       </div> 
       <ul class="list-group list-group-flush">
-        <li class="list-group-item price" style="font-size: 24px">¥{{ $product->price}}</li>
+        <li class="list-group-item price moji2" style="font-size: 24px">¥{{ $product->price}}</li>
         <li class="list-group-item">
           <!-- <a href="/home/{{ $product->id }}" class="btn btn-primary">詳細をチェック</a> -->
           <div class="modal_wrap">
@@ -109,7 +110,7 @@
                 </div>
               </div>
             </div>
-            <label for="modal-{{ $product->id }}" class="btn btn-primary mb-4">詳細をチェック</label>
+            <label for="modal-{{ $product->id }}" class="btn btn-primary mb-4 moji2">詳細をチェック</label>
           </div>
         </li>
       </ul>

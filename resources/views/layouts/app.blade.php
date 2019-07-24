@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'はじめてのネットショッピング') }}@yield('title')</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/jquery.min.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/jquery.min.js') }}" defer></script> -->
     <script src="{{ asset('js/bootstrap.js') }}" defer></script>
     <script src="{{ asset('js/ajaxzip3.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -27,6 +27,11 @@
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <LINK rel="shortcut icon" href="{{asset('images/favicon.png')}}">
+    <style>
+        body{
+            background-color: #EEEEEE!important;
+        }
+    </style>
 
     @yield('style')
 
@@ -35,11 +40,11 @@
 
 <!-- ヘッダー -->
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:#696969">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: #339966;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('home') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
-                    <div class="moji2 mr-5" style="color: white;"><p>はじめてのネットショッピング</p></div>
+                    <div class="moji2 mr-5 mt-2" style="color: white;"><p>はじめてのネットショッピング</p></div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -65,7 +70,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown mr-5">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre >
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle box2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: white;">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -105,10 +110,5 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="footer3">
-        <footer style="">
-            <p>&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script> Team34</p>
-        </footer>
-    </div> -->
 </body>
 </html>
