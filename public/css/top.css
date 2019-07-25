@@ -44,10 +44,19 @@ display:block;
 .btn-primary {
     color: black;
 
-    background: #339966;
+    background: white;
     border-width: 2px;
     border-style: solid;
-    border-color: #339966;
+    border-color: black;
+    border-image: initial;
+}
+.btn-hint {
+    color: black;
+
+    background: #FFFF00;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFF00;
     border-image: initial;
 }
 
