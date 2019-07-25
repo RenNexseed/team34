@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     /* margin-right: -15px; */
     /* margin-left: -15px; */
-    width: 1383px;
+    width: auto;
 }
 
 
@@ -94,7 +94,7 @@
   <div class="menu-items row text-center" >
 
     <?php foreach ($products as $product): ?>
-    <div class="card col-3.9 m-1">
+    <div class="card col-3.8 m-1">
         <div class="img_wrap mt-1"><!-- ホバーを追加 -->
           <img src="../{{ $product->picture_path }}" class="menu-item-image img-responsive mt-1" style="height:250px">
         </div>
