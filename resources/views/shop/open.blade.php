@@ -6,30 +6,24 @@
 
 <style>
   body {
-  font-family: Lato, 'Hiragino Kaku Gothic Pro', sans-serif;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  font-size: 30px;
-  letter-spacing: 0.05em;
-  color: black;
-  /*background-image: url(../storage/images/backimage03.jpg);*/
-}
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    background-color: #CCCCCC;
+  }
 
-input{
-  height: 40px;
-}
-
-h1{
-  font-size: 80px;
-  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-  color: #6cb4e4;
-  text-align: center;
-  padding: 0.25em;
-  border-top: solid 2px #6cb4e4;
-  border-bottom: solid 2px #6cb4e4;
-  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-}
+  input{
+    height: 40px;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    width: auto;
+  }
 
 .accessory {
   height: 6px;
@@ -80,10 +74,10 @@ hr:before {
 </style>
 
 @section('content')
-  <h1 class="text-center">商品紹介詳細ページ</h1>
+  <h1 class="mb-5 mx-auto mt-5" style="color: black;">商品紹介詳細ページ</h1>
   <div class="container">
     
-    <div class="card mb-3" style="width: 100%; border: double 5px #4ec4d3;">
+    <div class="card mb-3">
       <div class="row no-gutters">
         <div class="col-md-5 img_wrap1">
           <img src="../{{ $product->picture_path }}" class="card-img m-5" alt="..." style="vertical-align:middle; display:inline-block;">
@@ -113,7 +107,7 @@ hr:before {
               </div>
             </div>
             <hr class="accessory">
-            <div class="container">
+            <div class="container row">
             <div class="modal_wrap">
               <input id="trigger" type="checkbox">
                 <div class="modal_overlay">
@@ -127,7 +121,7 @@ hr:before {
                         </div>
                     </div>
                 </div>
-                  <label for="trigger" class="col-sm-7 open_button btn btn-primary">戻る</label>
+                  <label for="trigger" class="col-sm-3 mx-auto open_button btn btn-primary">戻る</label>
             </div>
             <div class="modal_wrap">
               <input id="trigger1" type="checkbox">
@@ -142,7 +136,7 @@ hr:before {
                         </div>
                     </div>
                 </div>
-              <label for="trigger1" class="col-sm-7 open_button btn btn-primary">カートに入れる</label>
+              <label for="trigger1" class="col-sm-8 mx-auto open_button btn btn-primary">カートに入れる</label>
             </div>
             </div>
           </div>
