@@ -9,7 +9,7 @@
 
 <h1 class="text-center mt-5">カートの中身
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+<button type="button" class="btn btn-hint" data-toggle="modal" data-target="#exampleModalCenter">
     ヒント
 </button>
 
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                  <label for="trigger" class="col-sm-7 btn open_button btn-primary">一覧画面に戻る</label>
+                  <label for="trigger" class="col-sm-8 btn open_button btn-primary">一覧画面に戻る</label>
             </div>
       <div class="modal_wrap mx-auto">
           <input id="trigger1" type="checkbox">
@@ -121,7 +121,7 @@
                       </div>
                   </div>
               </div>
-            <label for="trigger1" class="col-sm-7 open_button btn btn-primary">購入確認ページ</label>
+            <label for="trigger1" class="col-sm-8 open_button btn btn-primary">購入確認ページ</label>
         </div>
       </div>
   </form>
